@@ -24,10 +24,9 @@ plugins:
   - jekyll-sitemap
   # - jekyll-seo-tag ## NOT TESTED
 
-tags:
-  featured:
-    output: true
-
+# tags:
+#   featured:
+#     output: true
 
 collections:
   drawings:
