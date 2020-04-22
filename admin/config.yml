@@ -6,12 +6,6 @@ backend:
 
 media_folder: '/uploads'
 
-layout: post
-title:  Test Blog Post With a Longer Title
-published: true
-date:   2020-04-14 10:00 -04:00
-categories: test
-
 collections:
   - name: 'posts'
     label: 'Blog'
@@ -35,7 +29,7 @@ collections:
       - label: 'Publish Date'
         name: 'date'
         widget: 'datetime'
-        format: 'YYYY-MM-DD HH:MM ZZ'
+        format: 'YYYY-MM-DD HH:MM:SS ZZ'
         default: ''
         required: true
       - label: 'Tags'
