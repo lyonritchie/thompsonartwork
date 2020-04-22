@@ -6,7 +6,7 @@ layout: default
     {% assign collectionname = page.collection %}
     {% assign col = site.collections | where: 'label',collectionname | first %}
     <h1 class="pb-3">
-      <a href="/gallery/{{ collectionname }}">
+      <a href="/galleries/{{ collectionname }}">
         {{ col.title }}
       </a>
     </h1>

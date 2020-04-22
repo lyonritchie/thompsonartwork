@@ -4,6 +4,7 @@ title: Drawings
 ---
 
 {% assign items = site.drawings | sort: 'date' | reverse %}
+
 {% for item in items %}
   {% assign thumb = item.image_path | replace: ".jpg", "_tn.jpg" | split: "/" %}
 
@@ -21,4 +22,5 @@ title: Drawings
       </p>
     </div>
   </div>
+
 {% endfor %}

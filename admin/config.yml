@@ -89,7 +89,127 @@ collections:
       - label: 'Image'
         name: 'image_path'
         widget: 'image'
-        media_library: '/uploads/digital-art/'
+        media_folder: '/uploads/digital-art'
+        config:
+          - multiple: false
+      - label: 'Published'
+        name: 'published'
+        widget: 'boolean'
+        default: false
+      - label: 'Publish Date'
+        name: 'date'
+        widget: 'datetime'
+        format: 'YYYY-MM-DD HH:MM:SS ZZ'
+        default: ''
+        required: true
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'list'
+        required: false
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
+        required: false
+
+  - name: 'drawings'
+    label: 'Drawings'
+    folder: '_drawings/'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - label: 'Layout'
+        name: 'layout'
+        widget: 'hidden'
+        default: 'galleryitem'
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
+      - label: 'Image'
+        name: 'image_path'
+        widget: 'image'
+        media_folder: '/uploads/drawings'
+        config:
+          - multiple: false
+      - label: 'Published'
+        name: 'published'
+        widget: 'boolean'
+        default: false
+      - label: 'Publish Date'
+        name: 'date'
+        widget: 'datetime'
+        format: 'YYYY-MM-DD HH:MM:SS ZZ'
+        default: ''
+        required: true
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'list'
+        required: false
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
+        required: false
+      
+  - name: 'kid-stuff'
+    label: 'Kid Stuff'
+    folder: '_kid-stuff/'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - label: 'Layout'
+        name: 'layout'
+        widget: 'hidden'
+        default: 'galleryitem'
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
+      - label: 'Image'
+        name: 'image_path'
+        widget: 'image'
+        media_folder: '/uploads/kid-stuff'
+        config:
+          - multiple: false
+      - label: 'Published'
+        name: 'published'
+        widget: 'boolean'
+        default: false
+      - label: 'Publish Date'
+        name: 'date'
+        widget: 'datetime'
+        format: 'YYYY-MM-DD HH:MM:SS ZZ'
+        default: ''
+        required: true
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'list'
+        required: false
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
+        required: false
+
+  - name: 'studies'
+    label: 'Studies'
+    folder: '_studies/'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - label: 'Layout'
+        name: 'layout'
+        widget: 'hidden'
+        default: 'galleryitem'
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
+      - label: 'Image'
+        name: 'image_path'
+        widget: 'image'
+        media_folder: '/uploads/studies'
         config:
           - multiple: false
       - label: 'Published'

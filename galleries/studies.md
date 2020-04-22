@@ -1,11 +1,26 @@
 ---
 layout: gallery
 title: Studies
-# permalink: /gallery/:collection/index.html
 ---
 
-{% for item in site.studies %}
-  <div class="gallery">
-    <a href="{{ item.url }}"><img src="{{ item.image_path }}" alt="{{ item.title }}">{{ item.title }}</a>
+{% assign items = site.studies | sort: 'date' | reverse %}
+
+{% for item in items %}
+  {% assign thumb = item.image_path | replace: ".jpg", "_tn.jpg" | split: "/" %}
+
+  <div class="card">
+    <img 
+      class="card-img" 
+      src="/{{ thumb[1] }}/{{ thumb[2] }}/thumbnail/{{ thumb.last }}" 
+      alt="{{ item.title }}">
+    <div class="card-img-overlay">
+      <p class="card-title">
+        <a class="stretched-link"
+          href="{{ item.url }}">
+          {{ item.title }}
+        </a>
+      </p>
+    </div>
   </div>
+
 {% endfor %}
