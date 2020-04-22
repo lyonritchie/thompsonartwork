@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<article>
+
+  <header>
+    <h2>{{ collection.title | escape }}</h2>
+  </header>
+  <section class="galleryitem text-center">
+    <figure class="figure">
+      <img class="figure-img img-fluid rounded" 
+        src="{{ page.image_path }}" alt="{{ page.title }}">
+      <figcaption class="figure-caption">
+        {{ page.title }}
+      </figcaption>
+    </figure>
+    
+  </section>
+
+  {{ content }}
+
+  <nav class="py-2" aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        {% if page.previous.url %}
+        <a class="page-link" href="{{page.previous.url}}">&laquo;&nbsp;{{page.previous.title}}</a>
+        {% endif %}
+      </li>
+      <li class="page-item">
+        {% if page.next.url %}
+        <a class="page-link" href="{{page.next.url}}">{{page.next.title}}&nbsp;&raquo;</a>
+        {% endif %}
+      </li>
+    </ul>
+  </nav>
+
+  <small>
+    {% for tag in page.tags %}
+    <a href="/tags/{{ tag }}/">{{ tag }}</a>
+    {% endfor %}
+  </small>
+</article>

@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+<div>
+
+  {%- if page.title -%}
+  <header>
+    <h1>{{ page.title }}</h1>
+  </header>
+  {%- endif -%}
+
+  <section>
+    {{ content }}
+  </section>
+
+  
+  <section class="py-3 featured">
+    {% assign alldocs = site.documents %}
+    {% assign grouptag =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag %}
+    {%- for tag in grouptag -%}
+        <h3>{{- tag.name | capitalize -}}</h3>
+        
+        <div class="card-deck">
+        {%- for document in alldocs -%}
+          {% assign thumb = document.image_path | replace: ".jpg", "_tn.jpg" | split: "/" %}
+          {% if document.tags contains tag.name %}
+                    
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">{{ document.title | escape }}</h5>
+              <div class="card-text">
+                {%- if site.show_excerpts -%}
+                {{ document.excerpt | truncatewords: 9, '...' }}
+                {%- endif -%}
+              </div>
+              <a href="{{ document.url | relative_url }}" class="card-link">Read more...</a>
+            </div>
+            <div class="card-footer text-muted">
+              {%- assign date_format = "%b %-d, %Y" -%}
+              {{ document.date | date: date_format }}
+            </div>
+          </div>
+                    
+          {% endif %}
+        {%- endfor -%}
+        </div>
+  {%- endfor -%}
+  </section>
+
+  <section class="py-3 posts">
+  {%- if site.posts.size > 0 -%}
+    <h3>{{ page.list_title | default: "Recent Posts" }}</h3>
+
+    <div class="card-deck">
+    <!-- <div class="d-flex flex-row"> -->
+    {%- for post in site.posts limit: 3 -%}
+      <div class="card">
+        <div class="card-body">
+          <!-- <h6 class="card-subtitle mb-2 text-muted">[category/tag]</h6> -->
+          <h5 class="card-title">{{ post.title | escape }}</h5>
+          <div class="card-text">
+            {%- if site.show_excerpts -%}
+              {{ post.excerpt | truncatewords: 9, '...' }}
+            {%- endif -%}
+          </div>
+          <a href="{{ post.url | relative_url }}" class="card-link">Read more...</a>
+        </div>
+        <div class="card-footer text-muted">
+          {%- assign date_format = "%b %-d, %Y" -%}
+          {{ post.date | date: date_format }}
+        </div>
+      </div>
+    {%- endfor -%}
+    </div>
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+  </section>
+  
+</div>

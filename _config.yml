@@ -1,0 +1,61 @@
+title: Thompson Artwork
+# email: your-email@example.com
+author: Molly Thompson
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+## Dev only setting
+host: 0.0.0.0
+
+show_excerpts: true
+
+sass:
+  style: compressed
+
+# Build settings
+markdown: kramdown
+# theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap ## NOT TESTED
+  - jekyll-seo-tag ## NOT TESTED
+
+tags:
+  featured:
+    output: true
+
+
+collections:
+  drawings:
+    title: Drawings
+    output: true
+    permalink: /gallery/:collection/:path/
+  studies:
+    title: Studies
+    output: true
+    permalink: /gallery/:collection/:path/
+  digital-art:
+    title: Digital Art
+    output: true
+    permalink: /gallery/:collection/:path/
+  kid-stuff:
+    title: Kid Stuff
+    output: true
+    permalink: /gallery/:collection/:path/
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - makefile

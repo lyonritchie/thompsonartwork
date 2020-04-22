@@ -1,0 +1,36 @@
+<div class="topbar"></div>
+
+<div class="container pt-5 pb-3">
+  <header class="">
+    <h1 class="text-center">
+      <a class="" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    </h1>
+  </header>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+
+    {%- assign page_paths = site.header_pages -%}
+    <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto mr-auto">
+
+        {% assign pages_list = site.pages | sort:"order" %}
+          {% for node in pages_list %}
+            {% if node.title != null %}
+              {% if node.layout == "page" %}
+                <li class="nav-item">
+                  <a class="nav-link{% if page.url == node.url %} active{% endif %}" href="{{ node.url | relative_url }}">{{ node.title }}</a>
+                </li>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        
+      </ul>
+    </div>
+  </div>
+</nav>
