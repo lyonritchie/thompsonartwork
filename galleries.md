@@ -1,9 +1,12 @@
 ---
-layout: page
 title: Galleries
+layout: page
 permalink: /galleries/
 order: 1
 ---
+<!-- IMPORTANT: Switch editor to Markdown before adding content to this page. -->
+
+
 
 <ol>
 {% for item in site.collections %}
