@@ -1,0 +1,78 @@
+backend:
+  name: github
+  repo: lyonritchie/thompsonartwork
+  branch: master
+  site_domain: practical-shannon-ea7423.netlify.app
+
+media_folder: '/uploads'
+
+layout: post
+title:  Test Blog Post With a Longer Title
+published: true
+date:   2020-04-14 10:00 -04:00
+categories: test
+
+collections:
+  - name: 'posts'
+    label: 'Blog'
+    folder: '_posts/'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - label: 'Layout'
+        name: 'layout'
+        widget: 'hidden'
+        default: 'post'
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
+      - label: 'Published'
+        name: 'published'
+        widget: 'boolean'
+        default: false
+      - label: 'Publish Date'
+        name: 'date'
+        widget: 'datetime'
+        format: 'YYYY-MM-DD HH:MM ZZ'
+        default: ''
+        required: true
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'list'
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
+  - name: 'pages'
+    label: 'Pages'
+    editor:
+      preview: false
+    files:
+      - name: 'about'
+        label: 'About/Contact'
+        file: 'about.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'hidden', default: 'About/Contact' }
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
+          - { label: 'permalink', name: 'permalink', widget: 'hidden', default: '/about/' }
+          - { label: 'Order', name: 'order', widget: 'number', valueType: 'int', default: '2' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - name: 'shop'
+        label: 'Shop'
+        file: 'shop.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'hidden', default: 'Shop Links' }
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
+          - { label: 'permalink', name: 'permalink', widget: 'hidden', default: '/shop/' }
+          - { label: 'Order', name: 'order', widget: 'number', valueType: 'int', default: '4' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - name: 'galleries'
+        label: 'Galleries'
+        file: 'galleries.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'hidden', default: 'Galleries Links' }
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
+          - { label: 'permalink', name: 'permalink', widget: 'hidden', default: '/galleries/' }
+          - { label: 'Order', name: 'order', widget: 'number', valueType: 'int', default: '1' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
