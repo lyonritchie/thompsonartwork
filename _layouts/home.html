@@ -25,16 +25,25 @@ layout: default
         {%- for document in alldocs -%}
           {% assign thumb = document.image_path | replace: ".jpg", "_tn.jpg" | split: "/" %}
           {% if document.tags contains tag.name %}
-                    
+          
           <div class="card">
+            <img 
+              class="card-img-top" 
+              src="/{{ thumb[1] }}/{{ thumb[2] }}/thumbnail/{{ thumb.last }}" 
+              alt="{{ document.title }}">
             <div class="card-body">
-              <h5 class="card-title">{{ document.title | escape }}</h5>
-              <div class="card-text">
+              <h5 class="card-title">
+                <a class="stretched-link"
+                  href="{{ document.url }}">
+                  {{ document.title }}
+                </a>
+              </h5>
+              <!-- <div class="card-text">
                 {%- if site.show_excerpts -%}
                 {{ document.excerpt | truncatewords: 9, '...' }}
                 {%- endif -%}
               </div>
-              <a href="{{ document.url | relative_url }}" class="card-link">Read more...</a>
+              <a href="{{ document.url | relative_url }}" class="card-link">Read more...</a> -->
             </div>
             <div class="card-footer text-muted">
               {%- assign date_format = "%b %-d, %Y" -%}

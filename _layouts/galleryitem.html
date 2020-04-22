@@ -2,9 +2,15 @@
 layout: default
 ---
 <article>
-
   <header>
-    <h2>{{ collection.title | escape }}</h2>
+    {% assign collectionname = page.collection %}
+    {% assign col = site.collections | where: 'label',collectionname | first %}
+    <h1 class="pb-3">
+      <a href="/gallery/{{ collectionname }}">
+        {{ col.title }}
+      </a>
+    </h1>
+
   </header>
   <section class="galleryitem text-center">
     <figure class="figure">
@@ -34,9 +40,11 @@ layout: default
     </ul>
   </nav>
 
-  <small>
     {% for tag in page.tags %}
-    <a href="/tags/{{ tag }}/">{{ tag }}</a>
+    <span class="badge badge-info">
+      <!-- <a href="/tags/{{ tag }}/"> -->
+        {{ tag }}
+      <!-- </a> -->
+    </span>
     {% endfor %}
-  </small>
 </article>
