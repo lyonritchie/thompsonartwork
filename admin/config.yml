@@ -35,6 +35,7 @@ collections:
       - label: 'Tags'
         name: 'tags'
         widget: 'list'
+        required: false
       - label: 'Body'
         name: 'body'
         widget: 'markdown'
@@ -70,3 +71,42 @@ collections:
           - { label: 'permalink', name: 'permalink', widget: 'hidden', default: '/galleries/' }
           - { label: 'Order', name: 'order', widget: 'number', valueType: 'int', default: '1' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'digital-art'
+    label: 'Digital Art'
+    folder: '_digital-art/'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - label: 'Layout'
+        name: 'layout'
+        widget: 'hidden'
+        default: 'galleryitem'
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
+      - label: 'Image'
+        name: 'image_path'
+        widget: 'image'
+        media_library: '/uploads/digital-art/'
+        config:
+          - multiple: false
+      - label: 'Published'
+        name: 'published'
+        widget: 'boolean'
+        default: false
+      - label: 'Publish Date'
+        name: 'date'
+        widget: 'datetime'
+        format: 'YYYY-MM-DD HH:MM:SS ZZ'
+        default: ''
+        required: true
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'list'
+        required: false
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
+        required: false

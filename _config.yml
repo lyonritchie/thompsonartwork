@@ -30,19 +30,19 @@ collections:
   drawings:
     title: Drawings
     output: true
-    permalink: /gallery/:collection/:path/
+    permalink: /galleries/:collection/:path/
   studies:
     title: Studies
     output: true
-    permalink: /gallery/:collection/:path/
+    permalink: /galleries/:collection/:path/
   digital-art:
     title: Digital Art
     output: true
-    permalink: /gallery/:collection/:path/
+    permalink: /galleries/:collection/:path/
   kid-stuff:
     title: Kid Stuff
     output: true
-    permalink: /gallery/:collection/:path/
+    permalink: /galleries/:collection/:path/
 
 exclude:
   - Gemfile

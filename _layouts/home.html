@@ -17,7 +17,7 @@ layout: default
   
   <section class="py-3 featured">
     {% assign alldocs = site.documents %}
-    {% assign grouptag =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag %}
+    {% assign grouptag =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag | where: "name","featured" %}
     {%- for tag in grouptag -%}
         <h3>{{- tag.name | capitalize -}}</h3>
         
@@ -38,12 +38,6 @@ layout: default
                   {{ document.title }}
                 </a>
               </h5>
-              <!-- <div class="card-text">
-                {%- if site.show_excerpts -%}
-                {{ document.excerpt | truncatewords: 9, '...' }}
-                {%- endif -%}
-              </div>
-              <a href="{{ document.url | relative_url }}" class="card-link">Read more...</a> -->
             </div>
             <div class="card-footer text-muted">
               {%- assign date_format = "%b %-d, %Y" -%}
