@@ -71,6 +71,7 @@ collections:
           - { label: 'permalink', name: 'permalink', widget: 'hidden', default: '/galleries/' }
           - { label: 'Order', name: 'order', widget: 'number', valueType: 'int', default: '1' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+  
   - name: 'digital-art'
     label: 'Digital Art'
     folder: '_digital-art/'
