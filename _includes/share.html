@@ -1,0 +1,13 @@
+{% comment %} https://publish.twitter.com/?buttonType=TweetButton&widget=Button {% endcomment %}
+<div class="clearfix">
+  <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+  
+{% comment %} https://developers.facebook.com/docs/plugins/like-button {% endcomment %}
+<div class="clearfix">
+  <iframe 
+    src="https://www.facebook.com/plugins/like.php?href={{ page.url | absolute_url | uri_escape }}&width=450&layout=standard&action=like&size=small&share=true&height=35&appId" 
+    width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media">
+  </iframe>
+</div>
+

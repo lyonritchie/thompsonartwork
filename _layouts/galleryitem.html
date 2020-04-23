@@ -40,11 +40,13 @@ layout: default
     </ul>
   </nav>
 
-    {% for tag in page.tags %}
-    <span class="badge badge-info">
-      <!-- <a href="/tags/{{ tag }}/"> -->
-        {{ tag }}
-      <!-- </a> -->
-    </span>
-    {% endfor %}
+  {%- include share.html -%}
+
+  {% for tag in page.tags %}
+  <span class="badge badge-info">
+    <!-- <a href="/tags/{{ tag }}/"> -->
+      {{ tag }}
+    <!-- </a> -->
+  </span>
+  {% endfor %}
 </article>
