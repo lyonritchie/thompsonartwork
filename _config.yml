@@ -42,18 +42,22 @@ plugins:
 collections:
   drawings:
     title: Drawings
+    weight: 1
     output: true
     permalink: /galleries/:collection/:path/
   studies:
     title: Studies
+    weight: 2
     output: true
     permalink: /galleries/:collection/:path/
   digital-art:
     title: Digital Art
+    weight: 3
     output: true
     permalink: /galleries/:collection/:path/
   kid-stuff:
     title: Kid Stuff
+    weight: 4
     output: true
     permalink: /galleries/:collection/:path/
 
