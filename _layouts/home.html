@@ -23,7 +23,7 @@ layout: default
         
         <div class="card-deck">
         {%- for document in alldocs -%}
-          {% assign thumb = document.image_path | replace: ".jpg", "_tn.jpg" | split: "/" %}
+          {% assign thumb = document.image | replace: ".jpg", "_tn.jpg" | split: "/" %}
           {% if document.tags contains tag.name %}
           
           <div class="card">

@@ -6,7 +6,7 @@ title: Kid Stuff
 {% assign items = site.kid-stuff | sort: 'date' | reverse %}
 
 {% for item in items %}
-  {% assign thumb = item.image_path | replace: ".jpg", "_tn.jpg" | split: "/" %}
+  {% assign thumb = item.image | replace: ".jpg", "_tn.jpg" | split: "/" %}
 
   <div class="card">
     <img 

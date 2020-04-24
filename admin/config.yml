@@ -88,7 +88,7 @@ collections:
         name: 'title'
         widget: 'string'
       - label: 'Image'
-        name: 'image_path'
+        name: 'image'
         widget: 'image'
         media_folder: '/uploads/digital-art'
         config:
@@ -128,7 +128,7 @@ collections:
         name: 'title'
         widget: 'string'
       - label: 'Image'
-        name: 'image_path'
+        name: 'image'
         widget: 'image'
         media_folder: '/uploads/drawings'
         config:
@@ -168,7 +168,7 @@ collections:
         name: 'title'
         widget: 'string'
       - label: 'Image'
-        name: 'image_path'
+        name: 'image'
         widget: 'image'
         media_folder: '/uploads/kid-stuff'
         config:
@@ -208,7 +208,7 @@ collections:
         name: 'title'
         widget: 'string'
       - label: 'Image'
-        name: 'image_path'
+        name: 'image'
         widget: 'image'
         media_folder: '/uploads/studies'
         config:
