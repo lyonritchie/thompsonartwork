@@ -34,3 +34,18 @@
     </div>
   </div>
 </nav>
+
+{% if page.url contains '/galleries/' %}
+<div class="container">
+  <ul class="nav justify-content-center">
+    {% assign galleries = site.collections | sort:"weight" %}
+    {% for item in galleries %}
+    
+    {% if item.label != "posts" %}
+    <li class="nav-item"><a class="nav-link{% if page.url contains item.label %} active{% endif %}" href="/galleries/{{ item.label }}">{{ item.title }}</a></li>
+    {% endif %}
+    
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

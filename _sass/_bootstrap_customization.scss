@@ -253,6 +253,10 @@ legend {
   }
 }
 
+a.nav-link.active {
+  font-weight: 700; 
+}
+
 // Indicators ==================================================================
 
 .alert {
@@ -370,6 +374,10 @@ legend {
   .card a:hover {
     opacity: 100;
     transition: all .3s ease-in-out;
+  }
+  
+  .card-header {
+    z-index: 1;
   }
 }
 

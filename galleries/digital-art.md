@@ -3,6 +3,7 @@ layout: gallery
 title: Digital Art
 ---
 
+{%comment%} Move to layout {%endcomment%}
 {% assign items = site.digital-art | sort: 'date' | reverse %}
 
 {% for item in items %}

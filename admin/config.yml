@@ -32,13 +32,24 @@ collections:
         format: 'YYYY-MM-DD HH:MM:SS ZZ'
         default: ''
         required: true
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
+      - label: 'Description'
+        name: 'description'
+        widget: 'text'
+        hint: 'SEO'
+        required: false
+      - label: 'Keywords'
+        name: 'keywords'
+        widget: 'string'
+        hint: 'SEO'
+        required: false
       - label: 'Tags'
         name: 'tags'
         widget: 'list'
         required: false
-      - label: 'Body'
-        name: 'body'
-        widget: 'markdown'
+
   - name: 'pages'
     label: 'Pages'
     editor:
@@ -87,6 +98,16 @@ collections:
       - label: 'Title'
         name: 'title'
         widget: 'string'
+      - label: 'Description'
+        name: 'description'
+        widget: 'text'
+        hint: 'SEO + Social Sharing'
+        required: false
+      - label: 'Keywords'
+        name: 'keywords'
+        widget: 'string'
+        hint: 'SEO'
+        required: false
       - label: 'Image'
         name: 'image'
         widget: 'image'
@@ -127,6 +148,16 @@ collections:
       - label: 'Title'
         name: 'title'
         widget: 'string'
+      - label: 'Description'
+        name: 'description'
+        widget: 'text'
+        hint: 'SEO + Social Sharing'
+        required: false
+      - label: 'Keywords'
+        name: 'keywords'
+        widget: 'string'
+        hint: 'SEO'
+        required: false
       - label: 'Image'
         name: 'image'
         widget: 'image'
@@ -167,6 +198,16 @@ collections:
       - label: 'Title'
         name: 'title'
         widget: 'string'
+      - label: 'Description'
+        name: 'description'
+        widget: 'text'
+        hint: 'SEO + Social Sharing'
+        required: false
+      - label: 'Keywords'
+        name: 'keywords'
+        widget: 'string'
+        hint: 'SEO'
+        required: false
       - label: 'Image'
         name: 'image'
         widget: 'image'
@@ -207,6 +248,16 @@ collections:
       - label: 'Title'
         name: 'title'
         widget: 'string'
+      - label: 'Description'
+        name: 'description'
+        widget: 'text'
+        hint: 'SEO + Social Sharing'
+        required: false
+      - label: 'Keywords'
+        name: 'keywords'
+        widget: 'string'
+        hint: 'SEO'
+        required: false
       - label: 'Image'
         name: 'image'
         widget: 'image'
