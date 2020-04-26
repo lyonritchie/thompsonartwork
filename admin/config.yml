@@ -40,11 +40,6 @@ collections:
         widget: 'text'
         hint: 'SEO'
         required: false
-      - label: 'Keywords'
-        name: 'keywords'
-        widget: 'string'
-        hint: 'SEO'
-        required: false
       - label: 'Tags'
         name: 'tags'
         widget: 'list'
@@ -103,11 +98,6 @@ collections:
         widget: 'text'
         hint: 'SEO + Social Sharing'
         required: false
-      - label: 'Keywords'
-        name: 'keywords'
-        widget: 'string'
-        hint: 'SEO'
-        required: false
       - label: 'Image'
         name: 'image'
         widget: 'image'
@@ -152,11 +142,6 @@ collections:
         name: 'description'
         widget: 'text'
         hint: 'SEO + Social Sharing'
-        required: false
-      - label: 'Keywords'
-        name: 'keywords'
-        widget: 'string'
-        hint: 'SEO'
         required: false
       - label: 'Image'
         name: 'image'
@@ -203,11 +188,6 @@ collections:
         widget: 'text'
         hint: 'SEO + Social Sharing'
         required: false
-      - label: 'Keywords'
-        name: 'keywords'
-        widget: 'string'
-        hint: 'SEO'
-        required: false
       - label: 'Image'
         name: 'image'
         widget: 'image'
@@ -252,11 +232,6 @@ collections:
         name: 'description'
         widget: 'text'
         hint: 'SEO + Social Sharing'
-        required: false
-      - label: 'Keywords'
-        name: 'keywords'
-        widget: 'string'
-        hint: 'SEO'
         required: false
       - label: 'Image'
         name: 'image'

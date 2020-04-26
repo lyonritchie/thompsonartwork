@@ -3,16 +3,16 @@ layout: post
 title: Time For a Plan
 published: true
 date: 2020-04-26 18:04:00 -0400
-keywords: ""
 ---
-![Molly writes a plan](/uploads/first-blog-post.jpg)
 
 Launching a website for my personal art was overdue, and (I truly think) necessary to my growth as an artist. I am restricted from having more than one profile on some professional websites, and I’ve thought myself in circles over the consequences of muddying up my brand by including anything that deviates from my brand.
+
+![Molly writes a plan](/uploads/first-blog-post.jpg)
 
 So here I am (you can read my [Artist Statement](/about#artist-statement) for more of my background) and my reasons for establishing a separate website are as follows:
 
 1. I will always create more than I am commissioned to create.
-2. Experimentation with technique is something I prefer to do in my free time—not on a deadline.
+2. Experimentation with technique is something I prefer to do in my free time--not on a deadline.
 3. I doodle in several notebooks and on scraps of paper that I sometimes lose for years (or forever) and I’d like to keep track of my work.
 4. Tracking my progress in an organized, visual way motivates me to create more often.
 5. Failures and successes are all progress, and I hope that by sharing some of both I might encourage others to branch out with their own artwork.
