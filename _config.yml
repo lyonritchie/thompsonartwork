@@ -6,7 +6,7 @@ logo: # URL to a site-wide logo
 description: >- # this means to ignore newlines until "baseurl:"
   Molly Thompson is a board certified medical illustrator who makes recreational art in her free time. Her personal work counterbalances the demands of her profession, offering a sanctuary for creative studies and emotional expression.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://thompsonartwork.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://thompsonartwork.com"
 
 ## Jekyll-SEO-Tag specific
 twitter:
@@ -30,15 +30,11 @@ sass:
 
 # Build settings
 markdown: kramdown
-# theme: minima
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-seo-tag ## NOT TESTED
-
-# tags:
-#   featured:
-#     output: true
+  - jekyll-seo-tag
 
 collections:
   drawings:
