@@ -257,6 +257,13 @@ a.nav-link.active {
   font-weight: 700; 
 }
 
+.galleries {
+  .nav-link {
+    color: $navbar-light-color;
+    &:hover { color: $navbar-light-hover-color; }
+  }
+}
+
 // Indicators ==================================================================
 
 .alert {

@@ -12,37 +12,38 @@ layout: default
   </section>
 
   {% if page.name == 'galleries.md' %}
-  <section class="py-3 featured galleryindex">
+  <section class="py-3 featured galleries
+    d-flex 
+    flex-wrap 
+    justify-content-center
+    justify-content-sm-between
+    ">
     {% assign alldocs = site.documents %}
     {% assign grouptag =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag | where: "name","cover" %}
     {%- for tag in grouptag -%}
         
-        <div class="card-deck">
         {%- for doc in alldocs -%}
           {% assign thumb = doc.image | replace: ".jpg", "_tn.jpg" | split: "/" %}
           {% if doc.tags contains tag.name %}
           
           {% assign collectionname = doc.collection %}
           {% assign col = site.collections | where: 'label',collectionname | first %}
-          <div class="card">
-            <div class="card-header">
+          <div class="card text-center border-white" style="max-width: 250px">
+            <h5 class="card-title nav-item" style="font-weight: 500;" >
+              <a 
+              class="stretched-link nav-link"
+              href="/galleries/{{ collectionname }}">
               {{ col.title }}
-            </div>
+                </a>
+            </h5>
             <img 
-              class="card-img-bottom" 
+              class="card-img" 
               src="/{{ thumb[1] }}/{{ thumb[2] }}/thumbnail/{{ thumb.last }}" 
               alt="{{ doc.title }}">
-            <div class="card-img-overlay">
-                <a 
-                  class="stretched-link"
-                  href="/galleries/{{ collectionname }}">
-                </a>
-            </div>
           </div>
                     
           {% endif %}
         {%- endfor -%}
-        </div>
   {%- endfor -%}
   </section>
   {% endif %}
