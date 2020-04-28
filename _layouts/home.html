@@ -39,10 +39,6 @@ layout: default
                 </a>
               </h5>
             </div>
-            <!-- <div class="card-footer text-muted">
-              {%- assign date_format = "%b %-d, %Y" -%}
-              {{ document.date | date: date_format }}
-            </div> -->
           </div>
                     
           {% endif %}
@@ -56,11 +52,9 @@ layout: default
     <h3>{{ page.list_title | default: "Recent Posts" }}</h3>
 
     <div class="card-deck">
-    <!-- <div class="d-flex flex-row"> -->
     {%- for post in site.posts limit: 3 -%}
       <div class="card">
         <div class="card-body">
-          <!-- <h6 class="card-subtitle mb-2 text-muted">[category/tag]</h6> -->
           <h5 class="card-title">{{ post.title | escape }}</h5>
           <div class="card-text">
             {%- if site.show_excerpts -%}

@@ -37,6 +37,9 @@ plugins:
   - jekyll-seo-tag
 
 collections:
+  # archives:
+  #   output: true
+  #   permalink: /archives/:path/
   drawings:
     title: Drawings
     weight: 1

@@ -85,6 +85,10 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400
 
 // Typography ==================================================================
 
+html {
+  font-family: $font-family-sans-serif;
+}
+
 .posts .card-text.text-truncate {
   height: 3rem;
 }
@@ -93,11 +97,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 700;
 }
 
-article.blog section > p {
-  width: 33rem;
-  margin-left: auto;
-  margin-right: auto;
-}
+// article.blog section > p {
+//   width: 33rem;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
 
 // Tables ======================================================================
 

@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
+{% if page.layout == 'post' %}
+  {% assign blogsidebar = true %}  
+{% elsif page.title == 'Blog' %}
+  {% assign blogsidebar = true %}
+{% endif %}
+  
+
   {%- include head.html -%}
 
   <body>
 
     {%- include header.html -%}
 
-    <div class="py-3">
-      <div class="container page-content">
+    <div class="container py-3">
+      <div class="row page-content">
+        {% if blogsidebar == true %}
+        <div 
+          class="
+            col-md-8
+            "
+            >
           {{ content }}
+        {% else %}
+        {{ content }}        
+        {% endif %}
+        </div>
+        {% if blogsidebar == true %}
+        <div class="col-md-4">
+          {% include blog-sidebar.html %}
+        </div>
+        {% endif %}
       </div>
     </div>
 

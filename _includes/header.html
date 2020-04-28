@@ -24,7 +24,8 @@
             {% if node.title != null %}
               {% if node.layout == "page" %}
                 <li class="nav-item">
-                  <a class="nav-link{% if page.url == node.url %} active{% endif %}" href="{{ node.url | relative_url }}">{{ node.title }}</a>
+                  <a class="nav-link{% if page.url contains node.url %} active
+                  {% endif %}" href="{{ node.url | relative_url }}">{{ node.title }}</a>
                 </li>
               {% endif %}
             {% endif %}
@@ -35,15 +36,15 @@
   </div>
 </nav>
 
-{% if page.url contains '/galleries/' %}
+{% if page.layout contains "gallery" %}
 <div class="container">
   <ul class="nav justify-content-center">
     {% assign galleries = site.collections | sort:"weight" %}
     {% for item in galleries %}
     
-    {% if item.label != "posts" %}
-    <li class="nav-item"><a class="nav-link{% if page.url contains item.label %} active{% endif %}" href="/galleries/{{ item.label }}">{{ item.title }}</a></li>
-    {% endif %}
+      {% if item.label != "posts" %}
+      <li class="nav-item"><a class="nav-link{% if page.url contains item.label %} active{% endif %}" href="/galleries/{{ item.label }}">{{ item.title }}</a></li>
+      {% endif %}
     
     {% endfor %}
   </ul>
