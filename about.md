@@ -13,7 +13,7 @@ Molly Thompson is a board certified medical illustrator, substitute teacher and 
 ## Artist Statement
 {: .clear-fix}
 
-This is a place for my personal art.
+This is a place for my personal art. 
 
 My commercial (commissioned) art involves much research, communication and problem-solving. There are rules. There are translations. There are educational goals. I love my job, but there is still a person behind the professional, and my own art can be anything I want it to be. That’s as liberating for me as it should be for anyone. Like journaling in a notebook, practicing musical scales or physically exercising, art is a psychomotor activity that almost everyone can benefit from if they allow themselves to do it and refrain from judging the end result. 
 

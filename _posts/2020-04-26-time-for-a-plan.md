@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Time For a Plan
+image: /uploads/first-blog-post.jpg
 published: true
 date: 2020-04-26 18:04:00 -0400
 category: adventures

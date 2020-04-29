@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Archives
+publish: false
 ---
 
 <section>

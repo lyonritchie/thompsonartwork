@@ -32,10 +32,16 @@ thumbs: $(TNS) cleanup ##@website Create thumbnails for gallery images (all)
 galleries: $(MD_FILES)
 	# $(MD_FILES)
 
+METRIC := canny
+FUZZVAL := 10
 TNSIZE := 250
 %_tn.jpg: %.jpg ##@website Create a thumbnail image using content-aware cropping
 	mkdir -p $(@D)/thumbnail
+ifeq '$(ALT)' 'Y'
+	../APP/smarttrim.sh -m $(METRIC) -f $(FUZZVAL) -s $(TNSIZE)x$(TNSIZE) $< $(@D)/thumbnail/$(@F)
+else
 	smartcrop --width $(TNSIZE) --height $(TNSIZE) $< $(@D)/thumbnail/$(@F)
+endif
 
 %.md: %.jpg
 	printf -- "---\nlayout: galleryitem\nimage_path: /$<\ntitle: $(shell echo $(subst -, ,$(basename $(@F))) | sed 's/[^ ]\+/\L\u&/g') \npublished: true\ndate: $(shell stat -c "%x" $<)\n---\n\n" > $(subst uploads/,_,$(@D))/$(@F)

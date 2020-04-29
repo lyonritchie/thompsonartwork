@@ -43,23 +43,27 @@ defaults:
       type: topics
     values:
       layout: "topics"
+      blogsidebar: true
   -
     scope:
       path: ""
       type: "archives"
     values:
       layout: "archives"
+      blogsidebar: true
   -
     scope:
       path: ""
       type: "posts"
     values:
       author: "Molly Thompson"
+      blogsidebar: true
 
 collections:
-  # archives:
-  #   output: true
-  #   permalink: /archives/:path/
+  archives:
+    title: Archives
+    output: true
+    # permalink: /archives/:path/
   topics:
     title: Topics
     output: true
