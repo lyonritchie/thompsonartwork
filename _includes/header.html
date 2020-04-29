@@ -43,7 +43,9 @@
     {% for item in galleries %}
     
       {% if item.label != "posts" %}
-      <li class="nav-item"><a class="nav-link{% if page.url contains item.label %} active{% endif %}" href="/galleries/{{ item.label }}">{{ item.title }}</a></li>
+        {% if item.permalink contains "galleries" %}
+        <li class="nav-item"><a class="nav-link{% if page.url contains item.label %} active{% endif %}" href="/galleries/{{ item.label }}">{{ item.title }}</a></li>
+        {% endif %}
       {% endif %}
     
     {% endfor %}
