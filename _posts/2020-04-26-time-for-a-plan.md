@@ -3,7 +3,7 @@ layout: post
 title: Time For a Plan
 published: true
 date: 2020-04-26 18:04:00 -0400
-category: Adventures
+category: adventures
 ---
 
 Launching a website for my personal art was overdue, and (I truly think) necessary to my growth as an artist. I am restricted from having more than one profile on some professional websites, and I’ve thought myself in circles over the consequences of muddying up my brand by including anything that deviates from my brand.

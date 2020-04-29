@@ -36,10 +36,33 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: topics
+    values:
+      layout: "topics"
+  -
+    scope:
+      path: ""
+      type: "archives"
+    values:
+      layout: "archives"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "Molly Thompson"
+
 collections:
   # archives:
   #   output: true
   #   permalink: /archives/:path/
+  topics:
+    title: Topics
+    output: true
   drawings:
     title: Drawings
     weight: 1
