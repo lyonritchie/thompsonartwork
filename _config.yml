@@ -2,7 +2,7 @@ title: Thompson Artwork
 tagline: Creative sanctuary for medical illustrator Molly Thompson.
 # email: your-email@example.com
 author: Molly Thompson
-logo: # URL to a site-wide logo
+logo: /uploads/thumbnail/first-blog-post_tn.jpg # URL to a site-wide logo
 description: >- # this means to ignore newlines until "baseurl:"
   Molly Thompson is a board certified medical illustrator who makes recreational art in her free time. Her personal work counterbalances the demands of her profession, offering a sanctuary for creative studies and emotional expression.
 baseurl: "" # the subpath of your site, e.g. /blog

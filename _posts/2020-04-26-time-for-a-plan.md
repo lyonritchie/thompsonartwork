@@ -23,4 +23,4 @@ So here I am (you can read my [Artist Statement](/about#artist-statement) for mo
 8. There is value in what I have learned as a working artist.
 9. There is value in what I have learned overall as a creative person navigating life.
 
-I could go on, but 9 is a great number. I think I can summarize what readers and viewers can expect from my blog moving forward with one sentence. I will be discussing how I make art and enjoy it, whether working on commissions or practicing a creative habit for emotional well-being.
+I could go on, but 9 is a great number. I think I can summarize what readers and viewers can expect from my blog moving forward with one sentence. I will be discussing how I make art and *enjoy* it, whether working on commissions or practicing a creative habit for emotional well-being.
