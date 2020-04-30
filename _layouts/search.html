@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<header>
+  <h1>{{ page.title | escape }}</h1>
+</header>
+
+{{ content }}
+
+<input class="w-50" type="text" id="search-input" placeholder="Search blog posts..">
+<ul id="results-container"></ul>
+
+<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+<script>
+  var sjs = SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{{ site.url }}{url}">{title}</a> - {date}</li>',
+    noResultsText: 'Sorry, nothing found.'
+  })
+</script>
