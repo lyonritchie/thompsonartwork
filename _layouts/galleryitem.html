@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<!-- <article> -->
-  <!-- <header>
+  {%- comment -%}
+  <header>
     {% assign collectionname = page.collection %}
     {% assign col = site.collections | where: 'label',collectionname | first %}
     <h1 class="pb-3">
@@ -11,8 +11,9 @@ layout: default
       </a>
     </h1>
   </header>
-   -->
-  <section class="container galleryitem text-center carousel">
+  {%- endcomment -%}
+  
+  <section class=" galleryitem text-center carousel">
     <figure class="figure">
       <img class="figure-img img-fluid rounded" 
         src="{{ page.image }}" alt="{{ page.title }}">
@@ -45,13 +46,14 @@ layout: default
 
   {{ content }}
 
-  <!-- {%- include share.html -%} -->
-
-  <!-- {% for tag in page.tags %}
-  <span class="badge badge-info"> -->
-    <!-- <a href="/tags/{{ tag }}/"> -->
-      <!-- {{ tag }} -->
-    <!-- </a> -->
-  <!-- </span>
-  {% endfor %} -->
-<!-- </article> -->
+  {%- comment -%}
+  {%- include share.html -%}
+  
+  {% for tag in page.tags %}
+  <span class="badge badge-info">
+    <a href="/tags/{{ tag }}/">
+      {{ tag }}
+    </a>
+  </span>
+  {% endfor %}
+  {%- endcomment -%}

@@ -4,8 +4,22 @@ layout: default
 
 <article class="post">
   <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <h1 class="post-title">Archives - {{ page.title | escape }}</h1>
   </header>
+
+  {% assign items = site.archives | sort: 'title' | reverse %}
+  {% if items.size > 1 %}
+    <div class="btn-group-sm border-top border-bottom py-2 mb-3" role="group" aria-label="Archives by year">
+    {% for item in items %}
+
+      <a class="btn btn-link
+      {% if page.url contains item.title %} active"
+      aria-pressed="true"{% else %}"{% endif %}
+      href="{{ item.url }}" role="button">{{ item.title }}</a>
+      
+    {% endfor %}
+    </div>
+  {% endif %}
 
   {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" | where: "name", page.topic %} 
 

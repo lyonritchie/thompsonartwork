@@ -50,6 +50,10 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,400
     color: $gray-600;
   }
 
+  &-link.active {
+    font-weight: 700;
+  }
+
   &-outline-primary {
     color: $primary;
   }

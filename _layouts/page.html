@@ -1,11 +1,15 @@
 ---
 layout: default
 ---
-<!-- <article class="blog">
-
-  <section> -->
+{%- comment -%}
+<article class="blog">
+  
+  <section>
+{%- endcomment -%}
     {{ content }}
-  <!-- </section> -->
+{%- comment -%}
+  </section>
+{%- endcomment -%}
 
   {% if page.name == 'galleries.md' %}
   <section style="width: 100%" class="py-3 
@@ -44,4 +48,6 @@ layout: default
   {%- endfor -%}
   </section>
   {% endif %}
-<!-- </article> -->
+{%- comment -%}
+</article>
+{%- endcomment -%}
