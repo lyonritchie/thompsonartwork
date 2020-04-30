@@ -1,13 +1,13 @@
 ---
-layout: page
 title: About/Contact
+layout: page
 permalink: /about/
 order: 2
 ---
 
 ## Molly
 
-![Molly Thompson](uploads/molly-2020.png){: .w-50 .ml-3 .img-thumbnail .float-right}
+![Molly Thompson](/uploads/molly-2020.png){: .w-50 .ml-3 .img-thumbnail .float-right}
 Molly Thompson is a board certified medical illustrator, substitute teacher and traditional Irish fiddler living in western Pennsylvania. Her personal artwork reflects her interests in science, poetry, education, the human figure and emotional expression through mark making, often with animals as subjects.
 
 ## Artist Statement
