@@ -21,7 +21,7 @@ twitter:
 # google_site_verification:
 
 ## Dev only setting
-host: 0.0.0.0
+# host: 0.0.0.0
 
 show_excerpts: true
 
