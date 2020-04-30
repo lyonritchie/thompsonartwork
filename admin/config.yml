@@ -38,11 +38,12 @@ collections:
       - label: 'Description'
         name: 'description'
         widget: 'text'
-        hint: 'SEO'
+        hint: 'SEO: Will be used in the site meta-description tag.'
         required: false
-      - label: 'Tags'
+      - label: 'Topics'
         name: 'tags'
         widget: 'list'
+        hint: 'Be sure to match the topic name used in Topics.'
         required: false
 
   - name: 'pages'
@@ -50,6 +51,13 @@ collections:
     editor:
       preview: false
     files:
+      - name: 'home'
+        label: 'Home'
+        file: 'index.md'
+        fields:
+          - { label: 'Layout', name: 'layout', widget: 'hidden' }
+          - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Content will appear at the top of the page.', required: false }
+          - { label: 'Description', name: 'description', widget: 'text', hint: 'SEO: Will be used in the site meta-description tag. Note: This will override the description already set in the site config.', required: false }
       - name: 'about'
         label: 'About/Contact'
         file: 'about.md'
@@ -57,8 +65,9 @@ collections:
           - { label: 'Title', name: 'title', widget: 'hidden', default: 'About/Contact' }
           - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
           - { label: 'permalink', name: 'permalink', widget: 'hidden', default: '/about/' }
-          - { label: 'Order', name: 'order', widget: 'number', valueType: 'int', default: '2' }
+          - { label: 'Order', hint: 'Location within main navigation.', name: 'order', widget: 'number', valueType: 'int', default: '2' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Description', name: 'description', widget: 'text', hint: 'SEO: Will be used in the site meta-description tag.', required: false }
       - name: 'shop'
         label: 'Shop'
         file: 'shop.md'
@@ -66,8 +75,9 @@ collections:
           - { label: 'Title', name: 'title', widget: 'hidden', default: 'Shop Links' }
           - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
           - { label: 'permalink', name: 'permalink', widget: 'hidden', default: '/shop/' }
-          - { label: 'Order', name: 'order', widget: 'number', valueType: 'int', default: '4' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Order', hint: 'Location within main navigation.', name: 'order', widget: 'number', valueType: 'int', default: '4' }
+          - { label: 'Body', name: 'body', widget: 'markdown', required: false }
+          - { label: 'Description', name: 'description', widget: 'text', hint: 'SEO: Will be used in the site meta-description tag.', required: false }
       - name: 'galleries'
         label: 'Galleries'
         file: 'galleries.md'
@@ -75,8 +85,9 @@ collections:
           - { label: 'Title', name: 'title', widget: 'hidden', default: 'Galleries Links' }
           - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
           - { label: 'permalink', name: 'permalink', widget: 'hidden', default: '/galleries/' }
-          - { label: 'Order', name: 'order', widget: 'number', valueType: 'int', default: '1' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Order', hint: 'Location within main navigation.', name: 'order', widget: 'number', valueType: 'int', default: '1' }
+          - { label: 'Body', name: 'body', widget: 'markdown', required: false }
+          - { label: 'Description', name: 'description', widget: 'text', hint: 'SEO: Will be used in the site meta-description tag.', required: false }
   
   - name: 'digital-art'
     label: 'Digital Art'
@@ -113,10 +124,14 @@ collections:
         widget: 'datetime'
         format: 'YYYY-MM-DD HH:MM:SS ZZ'
         default: ''
+        hint: 'Affects sort order in gallery.'
         required: true
       - label: 'Tags'
         name: 'tags'
-        widget: 'list'
+        widget: 'select'
+        options: ["cover", "featured"]
+        multiple: true
+        hint: 'Show image on home page (featured) or as the gallery cover image.'
         required: false
       - label: 'Body'
         name: 'body'
@@ -158,10 +173,14 @@ collections:
         widget: 'datetime'
         format: 'YYYY-MM-DD HH:MM:SS ZZ'
         default: ''
+        hint: 'Affects sort order in gallery.'
         required: true
       - label: 'Tags'
         name: 'tags'
-        widget: 'list'
+        widget: 'select'
+        options: ["cover", "featured"]
+        multiple: true
+        hint: 'Show image on home page (featured) or as the gallery cover image.'
         required: false
       - label: 'Body'
         name: 'body'
@@ -203,10 +222,14 @@ collections:
         widget: 'datetime'
         format: 'YYYY-MM-DD HH:MM:SS ZZ'
         default: ''
+        hint: 'Affects sort order in gallery.'
         required: true
       - label: 'Tags'
         name: 'tags'
-        widget: 'list'
+        widget: 'select'
+        options: ["cover", "featured"]
+        multiple: true
+        hint: 'Show image on home page (featured) or as the gallery cover image.'
         required: false
       - label: 'Body'
         name: 'body'
@@ -248,11 +271,62 @@ collections:
         widget: 'datetime'
         format: 'YYYY-MM-DD HH:MM:SS ZZ'
         default: ''
+        hint: 'Affects sort order in gallery.'
         required: true
       - label: 'Tags'
         name: 'tags'
-        widget: 'list'
+        widget: 'select'
+        options: ["cover", "featured"]
+        multiple: true
+        hint: 'Show image on home page (featured) or as the gallery cover image.'
         required: false
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
+        required: false
+
+  - name: 'archives'
+    label: 'Archives'
+    folder: '_archives/'
+    create: true
+    slug: '{{fields.topic}}'
+    editor:
+      preview: false
+    fields:
+      - label: 'Year'
+        name: 'topic'
+        widget: 'string'
+        hint: 'Year in YYYY format'
+      - label: 'Published'
+        name: 'published'
+        widget: 'boolean'
+        default: false
+      - label: 'Body'
+        name: 'body'
+        widget: 'markdown'
+        required: false
+
+  - name: 'topics'
+    label: 'Topics'
+    folder: '_topics/'
+    create: true
+    slug: '{{fields.topic}}'
+    editor:
+      preview: false
+    fields:
+      # - label: 'Topic Title'
+      #   name: 'title'
+      #   widget: 'string'
+      #   hint: 'If not rendered properly from Topic, enter what you would like as a title for the topic page.'
+      #   required: false
+      - label: 'Topic'
+        name: 'topic'
+        widget: 'string'
+        hint: 'Topic name in lowercase. No spaces or special characters, except dash.'
+      - label: 'Published'
+        name: 'published'
+        widget: 'boolean'
+        default: false
       - label: 'Body'
         name: 'body'
         widget: 'markdown'

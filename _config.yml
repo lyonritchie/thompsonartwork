@@ -63,7 +63,7 @@ collections:
   archives:
     title: Archives
     output: true
-    # permalink: /archives/:path/
+    permalink: /archives/:path/
   topics:
     title: Topics
     output: true

@@ -3,7 +3,7 @@ layout: post
 title: Time For a Test
 published: false
 date: 2020-01-10 18:04:00 -0400
-category: test
+category: [test, works-in-progress]
 ---
 
 Aliquip deserunt magna Lorem enim reprehenderit duis mollit laborum elit nisi ipsum sint voluptate. Quis veniam dolor labore reprehenderit qui. Aliquip ex est aliqua laboris laborum nisi eiusmod aliqua culpa elit Lorem consequat fugiat.
