@@ -91,6 +91,10 @@ collections:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - node_modules/
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
   - makefile
   - update_bootstrap.sh

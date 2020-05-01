@@ -120,7 +120,13 @@ collections:
       - label: 'Image'
         name: 'image'
         widget: 'image'
-        media_folder: '/uploads/digital-art'
+        media_folder: '/uploads/digital-art/'
+        config:
+          - multiple: false
+      - label: 'Image Thumbnail'
+        name: 'image_tn'
+        widget: 'image'
+        media_folder: '/uploads/digital-art/thumbnail/'
         config:
           - multiple: false
       - label: 'Published'
@@ -169,13 +175,13 @@ collections:
       - label: 'Image'
         name: 'image'
         widget: 'image'
-        media_folder: '/uploads/drawings'
+        media_folder: '/uploads/drawings/'
         config:
           - multiple: false
       - label: 'Image Thumbnail'
         name: 'image_tn'
         widget: 'image'
-        media_folder: '/uploads/drawings/thumbnail'
+        media_folder: '/uploads/drawings/thumbnail/'
         config:
           - multiple: false
       - label: 'Published'
@@ -224,13 +230,13 @@ collections:
       - label: 'Image'
         name: 'image'
         widget: 'image'
-        media_folder: '/uploads/kid-stuff'
+        media_folder: '/uploads/kid-stuff/'
         config:
           - multiple: false
       - label: 'Image Thumbnail'
         name: 'image_tn'
         widget: 'image'
-        media_folder: '/uploads/kid-stuff/thumbnail'
+        media_folder: '/uploads/kid-stuff/thumbnail/'
         config:
           - multiple: false
       - label: 'Published'
