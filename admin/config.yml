@@ -78,6 +78,7 @@ collections:
           - { label: 'Order', hint: 'Location within main navigation.', name: 'order', widget: 'number', valueType: 'int', default: '4' }
           - { label: 'Body', name: 'body', widget: 'markdown', required: false }
           - { label: 'Description', name: 'description', widget: 'text', hint: 'SEO: Will be used in the site meta-description tag.', required: false }
+          - { label: 'Published', name: 'published', widget: 'boolean' }
       - name: 'galleries'
         label: 'Galleries'
         file: 'galleries.md'
