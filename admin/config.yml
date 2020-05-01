@@ -31,7 +31,7 @@ collections:
         widget: 'datetime'
         dateFormat: true
         timeFormat: true
-        format: 'YYYY-MM-DD HH:mm:ss'
+        format: 'YYYY-MM-DD HH:mm'
         default: ''
         required: true
       - label: 'Image Thumbnail'
@@ -138,7 +138,9 @@ collections:
       - label: 'Publish Date'
         name: 'date'
         widget: 'datetime'
-        format: 'YYYY-MM-DD HH:MM:SS ZZ'
+        dateFormat: true
+        timeFormat: true
+        format: 'YYYY-MM-DD HH:mm'
         default: ''
         hint: 'Affects sort order in gallery.'
         required: true
@@ -193,7 +195,9 @@ collections:
       - label: 'Publish Date'
         name: 'date'
         widget: 'datetime'
-        format: 'YYYY-MM-DD HH:MM:SS ZZ'
+        dateFormat: true
+        timeFormat: true
+        format: 'YYYY-MM-DD HH:mm'
         default: ''
         hint: 'Affects sort order in gallery.'
         required: true
@@ -248,7 +252,9 @@ collections:
       - label: 'Publish Date'
         name: 'date'
         widget: 'datetime'
-        format: 'YYYY-MM-DD HH:MM:SS ZZ'
+        dateFormat: true
+        timeFormat: true
+        format: 'YYYY-MM-DD HH:mm'
         default: ''
         hint: 'Affects sort order in gallery.'
         required: true
@@ -303,7 +309,9 @@ collections:
       - label: 'Publish Date'
         name: 'date'
         widget: 'datetime'
-        format: 'YYYY-MM-DD HH:MM:SS ZZ'
+        dateFormat: true
+        timeFormat: true
+        format: 'YYYY-MM-DD HH:mm'
         default: ''
         hint: 'Affects sort order in gallery.'
         required: true

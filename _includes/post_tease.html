@@ -4,7 +4,11 @@
   {% assign thumb = post.image | replace: ".jpg", "_tn.jpg" | split: "/" %}
   <img 
     class="w-25 mr-3 border border-secondary rounded" 
+    {% if post.image_tn %}
+    src="{{ post.image_tn }}"        
+    {% else %}
     src="/{{ thumb[1] }}/thumbnail/{{ thumb.last }}" 
+    {% endif %}
     alt="{{ post.title }}">
   {% endif %}
   <div class="media-body">

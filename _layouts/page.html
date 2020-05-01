@@ -36,7 +36,11 @@ layout: default
             </h5>
             <img 
               class="card-img" 
+              {% if doc.image_tn %}
+              src="{{ doc.image_tn }}"        
+              {% else %}
               src="/{{ thumb[1] }}/{{ thumb[2] }}/thumbnail/{{ thumb.last }}" 
+              {% endif %}
               alt="{{ doc.title }}">
           </div>
                     

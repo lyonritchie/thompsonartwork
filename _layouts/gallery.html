@@ -20,7 +20,11 @@ layout: default
     <div class="card">
       <img 
         class="card-img" 
+        {% if item.image_tn %}
+        src="{{ item.image_tn }}"        
+        {% else %}
         src="/{{ thumb[1] }}/{{ thumb[2] }}/thumbnail/{{ thumb.last }}" 
+        {% endif %}
         alt="{{ item.title }}">
       <div class="card-img-overlay">
         <p class="card-title">
