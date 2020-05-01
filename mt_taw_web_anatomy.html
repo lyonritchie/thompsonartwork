@@ -1,4 +1,15 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]--><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Asciidoctor 2.0.10"><meta name="author" content="Gary Ritchie"><title>Thompson Artwork: Website Overview &amp; Editing Guide</title><style>/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.10">
+<meta name="author" content="Gary Ritchie">
+<title>Thompson Artwork: Website Overview &amp; Editing Guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
 /* Uncomment @import statement to use as custom stylesheet */
 /*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
@@ -423,43 +434,340 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 .sect1+.sect1{border:0}
 #footer{background:none}
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
-@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}</style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"></head><body class="article toc2 toc-left"><header><h1>Thompson Artwork: Website Overview &amp; Editing Guide</h1><div class="details"><span class="author" id="author">Gary Ritchie</span><br><span class="email" id="email"><a href="mailto:gary@lyonritchie.com">gary@lyonritchie.com</a></span><br><span id="revnumber">version 0.1,</span> <time id="revdate" datetime="2020-05-01">May 2020</time><br><span id="revremark">Initial release</span></div><nav id="toc" class="toc2" role="doc-toc"><h2 id="toc-title">Table of Contents</h2><ol class="toc-list level-1"><li><a href="#_requirements">Requirements</a></li><li><a href="#_content_structure">Content Structure</a></li><li><a href="#_content_editing">Content Editing</a><ol class="toc-list level-2"><li><a href="#_blog">Blog</a></li><li><a href="#_galleries">Galleries</a></li><li><a href="#_archives_and_topics">Archives and Topics</a></li><li><a href="#_pages">Pages</a></li><li><a href="#_everything_else">Everything Else</a></li></ol></li></ol></nav></header><div id="content"><section id="preamble" aria-label="Preamble"><p>ThompsonArtwork.com is a static website&#8201;&#8211;&#8201;it does not use a database.
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>Thompson Artwork: Website Overview &amp; Editing Guide</h1>
+<div class="details">
+<span id="author" class="author">Gary Ritchie</span><br>
+<span id="email" class="email"><a href="mailto:gary@lyonritchie.com">gary@lyonritchie.com</a></span><br>
+<span id="revnumber">version 0.2,</span>
+<span id="revdate">May 2020</span>
+<br><span id="revremark">New thumbnail rules</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_requirements">Requirements</a></li>
+<li><a href="#_content_structure">Content Structure</a></li>
+<li><a href="#_content_editing">Content Editing</a>
+<ul class="sectlevel2">
+<li><a href="#_blog">Blog</a></li>
+<li><a href="#_gallery_items">Gallery Items</a></li>
+<li><a href="#_archives_and_topics">Archives and Topics</a></li>
+<li><a href="#_pages">Pages</a></li>
+<li><a href="#_everything_else">Everything Else</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>ThompsonArtwork.com is a static website&#8201;&#8212;&#8201;it does not use a database.
 Instead data is stored in flat text files throughout the git repository.
 GitHub Pages automatically recompiles this repo to html after each edit (commit) or push from local working copy.
-To streamline maintenance and publishing NetlifyCMS is connected as a front-end available at <a class="bare" href="https://thompsonartwork.com/admin">https://thompsonartwork.com/admin</a>.</p></section>
-<section class="doc-section level-1"><h2 id="_requirements">Requirements</h2><div class="ulist"><ul><li>A GitHub user account</li><li>Write privileges to the <a href="https://github.com/lyonritchie/thompsonartwork">site repository</a> provided by invite from Lyon Ritchie</li><li>Images named <code>word-word-another.jpg</code>, e.g. using the dash as a separator. Include corresponding thumbnails:<ul><li>Size: 250x250 px</li><li>Name: ends with <code>_tn.ext</code>, e.g. <code>word-word-another_tn.ext</code></li></ul></li></ul></div></section>
-<section class="doc-section level-1"><h2 id="_content_structure">Content Structure</h2><p>There are differences between the public organization of the site and the private organization within NetlifyCMS.</p>
-<figure class="image-block"><img src="data:image/png;base64,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" alt="taw web diagram sitemap">
-<figcaption>Figure 1. Logical Structure</figcaption></figure>
-<figure class="image-block"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADOCAIAAAD9iHquAAAXkklEQVR4Xu2df3BNx/vHr2JC0vqRFJFKPpII5Y9kVCcyEyPkZ6mJGGpG2s7UjJ9BqRpt/U4T0UFaNVJtZTqV0GIM0qLUj8ofjFIak6BKJPVhQjMRl4T4Uff79O43+1l7dvfc3JxznXs9rz/Ms88+Z++5Z993zx7nya7NgSAmY+MdCGI0KDLEdFBkiOmgyBDTQZEhpoMiQ0zHAJHZbAY04vNY/yqZd4butMudjXkn9xQx/EsZ3qAup06d6tu3L++V4/oZuh5JaFk0AUXmBoY3qEt2dvZ7773He+WYd4YtbtfGQD1FRUUDBgzw9/ePi4srLy8n/qamptmzZwcHB/fo0QMMKNL4nJyckJAQqCopKcnLywsMDAwNDS0tLaUBBQUFERERQUFBM2bMuH//PvEfPHhw4MCBHTt27N+//+bNm3U/RXhWFy5cGDt2LHxi586dx4wZU1tbS+M3bNjQq1evNm3acN+xT58+f/zxBxhXr16F2mvXroF97ty5qKgo9QnQBkmR+H/77Tf47mvWrCFFysOHDxcvXhwWFgZNwdcnTkXj6msIxMbGHjp0yCH/ynBhs7KywB8ZGfnFF1/QM9RtnI0UXmQOlcg+aYbz08+gxYyMjKqqqoaGBvj1xMfHEz9csuTk5P86GT58+JIlS2g8fDe73V5YWBgQEDBz5kxiDxo0iAbAgVedgLFs2TLi79mz5/bt2+/du3f+/PkJEyboforwrKKjow8fPnz37t1bt27BR0+aNInGjx49mgiIFIkBzJo168svvwQDeqJDhw5fffUVsd99912H8gS0Df7444/dunXbtWsXcbLk5uYOGzbs0qVLNTU106dPJ05F4+preOPGjS5dujx48MAh/8pLly4l15k0zkpH3TgbKbzIHDoio/+yaEUG14XYjY2NMNIQG4ais2fPEhs0Dj8XGl9XV+dw/kxZ28/PjwbQAysqKuiB8GNau3btlStXSJGg+BThWbHAtYORhtgQX11dTavY77h3716i6REjRsyfP3/UqFFgjx8//qeffnIoT4BrcN26dTA8nDhxgjpZYLzUjgSKxtXX8Jtvvhk3bhyxWdivDK2xjbPSUTfORupeZIeuyFwcyYRF+NHDqENsMKDIBchsMIQHwkwWfjdwD4X7FHQ8cbryKWzx5MmTiYmJXbt2tTlp27YtDXj8+LE2HoAxADobfqxwVH19Pdw74IL27t0b/A7lCXANQiMfffQR9XCw7Qidsm8ntOH++O233xJb9pW5xumxwgZZW2sIixSxl6JVGEAmGRTZJyl+hcSQ2WDAjIfY0AI9kAA9t3v3bpgukKIrn8IWIWDjxo3w63z06NHNmzdl14v7jq+99hpcitTUVLBTUlLAhlGNVLl+AnBXguFq5cqVrJ8Cv5wWjWQ0RmvDXRLulXDHJE7ZVwY/vc5wxxBeCqGtNYRFithLEYoMZhX05Byapmlx4cKFdD4Bv6RFixZxATIbjLS0NDIng36lExGY4pw+fRp+cyAymJ8RpyufwhZBnTt37oTBv7KyEn7usuvFfcfPP/8cZs2rV68Ge9WqVWDDjZtUtegEYIrWr18/mEprY5YvXw5zMjgrdk7mSuNaG56QBg8eTJ2yrwwTPnqd4VOEl0Joaw1hkSL2UoQiy8/Phx+K7ieBGmDK3MMJGHRkFp43a9ucT5fh4eFwY4LLTR+pduzYERMTAzd+eMaEmSxxuvIpbHHPnj3Qze3bt4fnOBCK7Ftw3/HPP/8E+8yZM2CXlZWBffHiRVLV0hMADcHT8ccff8zFwPCzYMECmDDB72f9+vXE6UrjWnvOnDmkfYLsK8OFnTZtGlxkGC/hE4WXQmhrDWGRIvZShCIzG9m5Ii4Cd14Y8nnv00OnO1FkSOvR6U4UGdJ6dLrzqYgM8TE8JzIcn55ZdDreDZHZmnn++efhqZv+RwCK7JlFp+PdExkx7HZ7bm6u9oUX8qyh0/GtERlw584d7ZsQWWYB+982BQUFKEqfQacjFSL7pBnOT8Vx+/btFStWDBkyhPPLMgsWLVo0YsSIa05SU1NRZD6DTkdSJQkhAdwhdE5mc07LTp06Rf3EkL2PA//58+eJDQEoMp9BpyO1GqKwUmOh4rh7925+fn5CQgLnl2UWgEFvnWxSAOLt6HSkVkMswlpWHA0NDTTHCEeyZxadjhTKiCKsZUeyNWvWDBw4kPPLMgvAT+dkaWlpKDKfQacjhTKiCGv/fzpms8EYFh8fX1ZWRv3EkGUWgDFlypSuXbuGh4d/+umn7du3J37E2zFeZIZw5swZkBrvRbwTa4lszpw5NTU11dXVSUlJLfpzLsTKWEtkMIfr1atX9+7dJ0+e3NjYyFcj3om1RIb4JCgyxHQ8LTL67BkUFJSenn758mU+wgXogyriFej0llpG6lohVB+1tbUffPABfbPZIlBk3oVOb6llpK4VwurDbrcHBAQQW5aaoV3/go6FKDVvQaef1DJS1wrhRjLdhTOE61+gvLwLnd5Sy+gTOXxoM3QQCgwMHDVq1KVLl4hf9kJTuP4Fisy70OkthVzcQ6YPWWqGcP0LWSOINdHpLY+JTDaSEbj1L7iFKhCLI+5yisdEJkvNEK5/wS1UgVgccZdTPCYyWWqGcP0LbqEKxOLo9JPhIkOeQVBkiOmgyBDTQZEhpoMiQ0zHeJHR/9NvTZ4F4kuYIjJitCbPAvElTBSZ48k8C9m+GLIlMP7555+cnJzevXt37dp14sSJDQ0NxK/Ny0Asjvsic74H/xfOz41kuluByJbAyM/PT0pKgrvtzZs333rrrblz5xK/MC8DsTL6IlNAArhD6JyMy7NgYffFkP3h+Msvv0x2NAKuX7/+n//8h9jCvAzEyuiLjHc1w0qNhb1dsij2xRAugQE3xLZOnnvuuTZt2sC/xC/My0CsjFgQFK2GWIS1MpHJ9sWQjWT9+vWrqqoithYuLwOxMmJBUIQyoghrZSKT7YshWwJjzZo1ycnJ586da2xsPHHiRHp6OvEL8zIQKyMWBEUoI4qwViYy2b4YsiUw4OkSwmBm5u/v/+qrr5aUlBC/MC8DsTJiQVCEMqKoa90Al8DwSSwhMlwCw7exhMhwCQzfxhIiQ3wbFBliOp4WmfbZU+tBfAydDlbLSF0rRCsprQfxMXQ6WC0jda0QraSoR7YcBgTk5OSEhIRAVUlJSV5eXmBgYGhoaGlpKQmQ5WsgFoHvcg61jNS1QhQiky2HAQFZWVl2u72wsDAgIGDmzJnEprs2yfI1EIvAdzmHWkafyOFDm7GJIFWyPyKHgLq6OodzqGNtPz8/EiDL10AsQmtFxrv0oJLSemTLYbCHCG1ZvgZiEfgu51DLSF0rRCEyxUhGDJmtztdAnjp8l3OoZaSuFaIQmWw5DKGwWFuWr4FYBL7LOdQyUtcKUYhMthyGUFisLcvXQCwC3+UcahmpaxGEgCJDTAdFhpgOigwxHauITPtAgPgMOl2rlpG6VkGfPn2ioqJYj1EiM6odxEB0ukQtI3WtjKNHj77s5NixY9RplDiMagcxEJ0uUctIXStjypQpK1asyMvLmzp1KnWCOAoKCiIiIoKCgmbMmHH//n3iV6Rm0GNp0cbA1iJPF53OUMtIXSsEVBIYGEj+Wx/0xIomOTn5qhMwli1bRvyK1AxicEWUlwXR6RK1jD6Rw4c2s3Xr1pSUFGKDerZt20ZsEAd9cVlRUUFfXLryQpMtosgsiE6XKOTi0KsVMnLkyE2bNhG7uLj49ddfJzaIQ5iC4UpqBltEkVkQnS5Ry0hdq+X69evt2rUjcyYCFMHpcIqD7v8AQ5fuSAZqo388V1NTQ7WFm5VYEI+KLD8//5133mE9EydO/PTTTx1OkaWlpZE5WWpqKp17yVIz4uPjs7OzGxoaLl++nJ6eTkWGm5VYEI+KLDo6+siRI6wHijExMQ6nyODpMjw8HB4Lpk+fzi4mJUzNgFEtLi7O39+/f//+RUVFVGS4WYkF0ekMtYzUtQhCQJEhpoMiQ0wHRYaYjlVEhlN1H0ana9UyUtcKqampefvtt4ODgzt16pSUlHTgwAHiR5H5MDpdq5aRulZISkrK+++/f/36dbvd/vPPPycmJhI/isyH0elatYzUtUICAgLu3LnDe50iKyoqGjBggL+/f1xcXHl5OfErsjCEWRuIBfG0yIYOHTpr1qyLFy9yfhBNRkZGVVVVQ0NDdnY23cdEkYUhzNpALEhrRSaDD20GbpTTpk176aWXOnfunJmZee3aNeIH0cB0jdiNjY0dO3YktuzdpU2StYFYkNaKjHe5zI0bN+bOnZuQkECK3JyMFhVZGEI/YkGemsiA27dv0z3kZCJTjGTCrA3EgnhaZPA4CQ+V9fX1tbW1H374IUzRiF8mMlkWhk2StYFYEE+L7MCBA0lJSS+88EK3bt3Gjh37119/Eb9MZLIsDPJ0qc3aQCyIp0VmFJwoESuj01VqGalrTQVF5kXodJVaRupaU0GReRE6XaWWkboWQQheIDI6aOHo5aXodJtaRupaGb///vvIkSM7derUpUuXhISEffv28RFP4rbIWhqPmIRON6hlpK4VUlFR0b1794KCgmvXrtXX1//yyy+pqal80JO4LTLEIuh0m1pG6loh48ePX716Ne91cuHChbFjxwYGBnbu3HnMmDG1tbXErxWZbAsSCNiwYUOvXr3IX1/qxh88eHDgwIEdO3bs37//5s2biRMxHE+LrFu3brLl0KOjow8fPnz37t1bt27NnDlz0qRJxK8VmWwLEggYPXo0+9JdHd+zZ8/t27ffu3fv/PnzEyZMIE7EcForMhl8aDNt27Zl/9ee8GTIv9jtdhiQiK0VmWwLEgiorq4mNikSQxYfGhq6du3aK1eukCJiEoIOZlHIxT20IxmVwsmTJxMTE+GORpQHcuQCqCHbggQCHj9+TGxX4k+dOpWRkREUFBQVFbV37156IGIsnhYZzLo+++wz1kOlEBkZuXHjxrq6ukePHsF9Tastasi2IKEBXFEWTwBd7t69Ozg4mK9ADMLTIisrK4Ony6+//hpuW42NjTD1plKAbt65c2dTU1NlZSVoUastasi2IJGJTBYPE7jTp0/D7RtEBvOz/x2JGIqnRQYcP34cbosBAQFwn4L5+KFDh4h/z549MOS0b98+LCwMpkpabVFDtgWJTGSy+B07dsTExMDNFJ4x4Znjf0cihvIURIY8a6DIENNBkSGmgyJDTMcSItNO7RFfQqdT3ROZx/Is1EBrgwcP5jxsEfEMOhfdDZFZJ8/C5vyLpi1btrAeph7xEDoX3Q2ReSzP4sUXX6QtPHjwAIp///03KdLg8vLyqKgoulIGbV9xJvC5ISEhwcHBJSUleXl5EBMaGlpaWkoCZCeGKHBfZM734P/C+bVvJynG5llAC8uXLyf+/fv30y0BKKS1yZMnkwW2qcehPJOsrCy73V5YWBgQEABVxB40aBAJkJ0YokBfZApIAHeIx/IsoKfDwsJgDAN72rRp33//PfFTSGvkcLhxUw8HdyZ1dXUO52pCrO3n50cCZCeGKBBcdBathiis1Fi0IxntWsPzLMaNG/fdd9+Bp1+/fjAsUT+Btpabmztv3jzWo3smMlt2YogC90XmkNR6Ms/i119/jY2NPXr0KLcHBYEGg/5gZgZDoOtnIrNlJ4YoMF5knsyzAIYMGZKQkEDfsrOwwcXFxZmZma6ficyWnRiigO8zDqGMKLJaj+VZALt27YIZFcRzfseTwXBLhTGPenTPRGbLTgxRwPcZh0xGBHWtZ1i/fv38+fN5L2IlvFtkt27d6tu379WrV/kKxEp4scjgFgYPdwUFBXwFYjG8WGSIt+AFIhPOyhEvQqfb1DJS18qwTo4GZyAmoXN91TJS1wqxTo4GxaRmEYrO9VXLSF0rxFI5GuRfCvErGlcnaCAyPC0y7ZtNiiIzgjNkqRC2ludosAZB0bg6QQOR0VqRyeBDm7FajgZrEBSNqxM0EBmCDmZRyMU9tCMZ7WPdzAhqyFIhbG7laHAiUzROY2Q2IkTnAhkuMgvmaJDFzCiuNC6zESE6F8hwkVkwRwMGV7qDjsO1xmU2IkTnAhkuMof1cjRgpt+lS5cWNS6zESE6F8gMkXkSzNGwAr4sMszRsAg+KzIb5mhYBp8VGWIdrCUynET7JDqd6rbI+vTpExUVxXv1kIlM5ke8Ap3Oc09kR48efdnJsWPH+DolKCafRKdT3RPZlClTVqxYkZeXN3XqVOq0PbldyMOHDxcvXhwWFhYcHEyn5xBTVFQ0YMAAf3//uLi48vJy6i8rK4uMjKRvjcCIiIg4c+aMLGkCdxuxDu6LzPke/F84f1NTU2BgINk1PCgoiG7cbHtyu5Dc3Nxhw4ZdunSppqZm+vTpNCYjI6Oqqgq0kp2dHR8fT/3w7yuvvALSIZ4DBw6Q9AdZ0gTuNmId9EWmgARwh2zdujUlJYXYycnJ27ZtI7btye1CYNJGByoKxIDmiN3Y2AjjEPXDv+vWrRs/fjzxvPHGG2T8kyVN4G4j1kFfZLyrGVZqLCNHjty0aROxi4uLaSKX7ckUiQ4dOtCcHwo3J6NFYtTX13fq1OlvJ2CQNVRkSRO424h1cF9kDlEtjCXt2rWzMUARnA6NgKDvhSOZsEgNuPGtWrVq5cqVmZmZxCNLmiDgbiNWwGCRwQyJy6uByThZHowT0PLly2FOVllZyc3J2BityGAqBqrq27cvnZzJkiZwtxHrYLDIoqOjjxw5wnqgGBMT49AI6MGDBwsWLICHTVDA+vXriVNXZDAy9XZC77yypAncbcQ6GCwyBNGCIkNMB0WGmA6KDDEdbxIZ91iAeAs63aaWkbpWgXVyNBITE3/44Qda3LVrV1JSElOPGIBO96hlpK6VYakcjePHj8fGxtIi2OBh6hED0Ok2tYzUtTKskKPBkp6evn//fjD27ds3evRo4pQdqFiwgz1/hMXTIrNIjgYLiDUhIQGMoUOHUuHKDlQs2MGeP8LSWpHJ4EObsUiOBsebb765dOlSEBP1uHIgt2AHe/4IS6tE5gYWydHggCETGqmsrKQe2YGKBTvY80dYPCoyq+VosHCNyw7UXbAD0aJzaYwVmXVyNLRwjcsO1F2wA9Gic2mMFZl1cjS0cI3LDtRdsAPRonNpjBUZ8myCIkNMB0WGmA6KDDEdFBliOgaLzCaCD3IB945CrIlOX7ZUZBRUCULRkYJRImtqapo9e3ZwcHCPHj3AYN+LFxQUREREBAUFzZgx4/79+9RPDGE6Bq5z4V24LzLne/B/4SuccCIDoSQnJ5Pki+HDhy9ZsoSGgf+qEzCWLVtG/cQQpmPgOhfehb7IFJAA/hgnnMhgrDp79iyxy8vLIyMjiQ1h1F9RUcH6iSFMx8B1LrwLHZEpYKWmhRMZm1UBBhSJDWEyPzGE6Ri4zoV34b7IHPJhzKERmWIkoxs1QIB2JBOmYxBwnQtvwUMiW7hwIZ2TJSYmLlq0iIalpaWROVlqaio7VyOGMB0D17nwLjwkMhDErFmzejgBg90oDp4Zw8PDAwMDQUPsUycxhOkYuM6Fd2GWyFyE0yLik7Sqj1FkiCu0qo9RZIgrtKqPWy8y5FkARYaYjkdFZhPBB7mA60dB5ODBgzkPW0Q8QKuueEtFRvFYT9uc/w+3ZcsW1sPUI56gVVfcKJEZm6PBApHl5eVRUVHaYxWrWuTk5ISEhECbJSUleXl5EBMaGlpaWkoCZMtkIDIsITJjczRYSOTkyZPJX3dSj0O5qkVWVpbdbi8sLAwICIAqYpPFNRzyZTIQGa0VmQw+9Ek4kSnebLqRo8FCIsliFmThAu6jCdyqFnV1dQ7n+Mrafn5+JMCVZTIQFsEV9wBcTxubo8HCjnnz5s1jPYpVLYghs2XLZCAyLCEyxUjmdo4GgUbCbRGCq6urqceVVS2EtmyZDESGJURmbI4GC/tBxcXFmZmZ1OPKqhZCW7ZMBiLDEiIzNkeDhf2gx48fx8bGUo8rq1oIbdkyGYiMpyMyF+G0iHgplu5FFJlvYOleRJH5BtiLiOmgyBDTQZEhpoMiQ0zn/wDV3YHp/MtSngAAAABJRU5ErkJggg==" alt="taw web diagram cmsmap">
-<figcaption>Figure 2. NetlifyCMS Structure (Collections)</figcaption></figure></section>
-<section class="doc-section level-1"><h2 id="_content_editing">Content Editing</h2><p>Hints are included with notable fields in the NetlifyCMS editor.
+To streamline maintenance and publishing NetlifyCMS is connected as a front-end available at <a href="https://thompsonartwork.com/admin" class="bare">https://thompsonartwork.com/admin</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_requirements">Requirements</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>A GitHub user account</p>
+</li>
+<li>
+<p>Write privileges to the <a href="https://github.com/lyonritchie/thompsonartwork">site repository</a> provided by invite from Lyon Ritchie</p>
+</li>
+<li>
+<p>Images named <code>word-word-another.jpg</code>, e.g. using the dash as a separator. Include corresponding thumbnails:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Size: 250x250 px</p>
+</li>
+<li>
+<p>Name: ends with <code>_tn.ext</code>, e.g. <code>word-word-another_tn.ext</code></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_content_structure">Content Structure</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are differences between the public organization of the site and the private organization within NetlifyCMS.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="data:image/png;base64,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" alt="taw web diagram sitemap">
+</div>
+<div class="title">Figure 1. Logical Structure</div>
+</div>
+<div class="paragraph">
+<p>NetlifyCMS uses collections to group content that shares the same data structure.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADOCAIAAAD9iHquAAAXkklEQVR4Xu2df3BNx/vHr2JC0vqRFJFKPpII5Y9kVCcyEyPkZ6mJGGpG2s7UjJ9BqRpt/U4T0UFaNVJtZTqV0GIM0qLUj8ofjFIak6BKJPVhQjMRl4T4Uff79O43+1l7dvfc3JxznXs9rz/Ms88+Z++5Z993zx7nya7NgSAmY+MdCGI0KDLEdFBkiOmgyBDTQZEhpoMiQ0zHAJHZbAY04vNY/yqZd4butMudjXkn9xQx/EsZ3qAup06d6tu3L++V4/oZuh5JaFk0AUXmBoY3qEt2dvZ7773He+WYd4YtbtfGQD1FRUUDBgzw9/ePi4srLy8n/qamptmzZwcHB/fo0QMMKNL4nJyckJAQqCopKcnLywsMDAwNDS0tLaUBBQUFERERQUFBM2bMuH//PvEfPHhw4MCBHTt27N+//+bNm3U/RXhWFy5cGDt2LHxi586dx4wZU1tbS+M3bNjQq1evNm3acN+xT58+f/zxBxhXr16F2mvXroF97ty5qKgo9QnQBkmR+H/77Tf47mvWrCFFysOHDxcvXhwWFgZNwdcnTkXj6msIxMbGHjp0yCH/ynBhs7KywB8ZGfnFF1/QM9RtnI0UXmQOlcg+aYbz08+gxYyMjKqqqoaGBvj1xMfHEz9csuTk5P86GT58+JIlS2g8fDe73V5YWBgQEDBz5kxiDxo0iAbAgVedgLFs2TLi79mz5/bt2+/du3f+/PkJEyboforwrKKjow8fPnz37t1bt27BR0+aNInGjx49mgiIFIkBzJo168svvwQDeqJDhw5fffUVsd99912H8gS0Df7444/dunXbtWsXcbLk5uYOGzbs0qVLNTU106dPJ05F4+preOPGjS5dujx48MAh/8pLly4l15k0zkpH3TgbKbzIHDoio/+yaEUG14XYjY2NMNIQG4ais2fPEhs0Dj8XGl9XV+dw/kxZ28/PjwbQAysqKuiB8GNau3btlStXSJGg+BThWbHAtYORhtgQX11dTavY77h3716i6REjRsyfP3/UqFFgjx8//qeffnIoT4BrcN26dTA8nDhxgjpZYLzUjgSKxtXX8Jtvvhk3bhyxWdivDK2xjbPSUTfORupeZIeuyFwcyYRF+NHDqENsMKDIBchsMIQHwkwWfjdwD4X7FHQ8cbryKWzx5MmTiYmJXbt2tTlp27YtDXj8+LE2HoAxADobfqxwVH19Pdw74IL27t0b/A7lCXANQiMfffQR9XCw7Qidsm8ntOH++O233xJb9pW5xumxwgZZW2sIixSxl6JVGEAmGRTZJyl+hcSQ2WDAjIfY0AI9kAA9t3v3bpgukKIrn8IWIWDjxo3w63z06NHNmzdl14v7jq+99hpcitTUVLBTUlLAhlGNVLl+AnBXguFq5cqVrJ8Cv5wWjWQ0RmvDXRLulXDHJE7ZVwY/vc5wxxBeCqGtNYRFithLEYoMZhX05Byapmlx4cKFdD4Bv6RFixZxATIbjLS0NDIng36lExGY4pw+fRp+cyAymJ8RpyufwhZBnTt37oTBv7KyEn7usuvFfcfPP/8cZs2rV68Ge9WqVWDDjZtUtegEYIrWr18/mEprY5YvXw5zMjgrdk7mSuNaG56QBg8eTJ2yrwwTPnqd4VOEl0Joaw1hkSL2UoQiy8/Phx+K7ieBGmDK3MMJGHRkFp43a9ucT5fh4eFwY4LLTR+pduzYERMTAzd+eMaEmSxxuvIpbHHPnj3Qze3bt4fnOBCK7Ftw3/HPP/8E+8yZM2CXlZWBffHiRVLV0hMADcHT8ccff8zFwPCzYMECmDDB72f9+vXE6UrjWnvOnDmkfYLsK8OFnTZtGlxkGC/hE4WXQmhrDWGRIvZShCIzG9m5Ii4Cd14Y8nnv00OnO1FkSOvR6U4UGdJ6dLrzqYgM8TE8JzIcn55ZdDreDZHZmnn++efhqZv+RwCK7JlFp+PdExkx7HZ7bm6u9oUX8qyh0/GtERlw584d7ZsQWWYB+982BQUFKEqfQacjFSL7pBnOT8Vx+/btFStWDBkyhPPLMgsWLVo0YsSIa05SU1NRZD6DTkdSJQkhAdwhdE5mc07LTp06Rf3EkL2PA//58+eJDQEoMp9BpyO1GqKwUmOh4rh7925+fn5CQgLnl2UWgEFvnWxSAOLt6HSkVkMswlpWHA0NDTTHCEeyZxadjhTKiCKsZUeyNWvWDBw4kPPLMgvAT+dkaWlpKDKfQacjhTKiCGv/fzpms8EYFh8fX1ZWRv3EkGUWgDFlypSuXbuGh4d/+umn7du3J37E2zFeZIZw5swZkBrvRbwTa4lszpw5NTU11dXVSUlJLfpzLsTKWEtkMIfr1atX9+7dJ0+e3NjYyFcj3om1RIb4JCgyxHQ8LTL67BkUFJSenn758mU+wgXogyriFej0llpG6lohVB+1tbUffPABfbPZIlBk3oVOb6llpK4VwurDbrcHBAQQW5aaoV3/go6FKDVvQaef1DJS1wrhRjLdhTOE61+gvLwLnd5Sy+gTOXxoM3QQCgwMHDVq1KVLl4hf9kJTuP4Fisy70OkthVzcQ6YPWWqGcP0LWSOINdHpLY+JTDaSEbj1L7iFKhCLI+5yisdEJkvNEK5/wS1UgVgccZdTPCYyWWqGcP0LbqEKxOLo9JPhIkOeQVBkiOmgyBDTQZEhpoMiQ0zHeJHR/9NvTZ4F4kuYIjJitCbPAvElTBSZ48k8C9m+GLIlMP7555+cnJzevXt37dp14sSJDQ0NxK/Ny0Asjvsic74H/xfOz41kuluByJbAyM/PT0pKgrvtzZs333rrrblz5xK/MC8DsTL6IlNAArhD6JyMy7NgYffFkP3h+Msvv0x2NAKuX7/+n//8h9jCvAzEyuiLjHc1w0qNhb1dsij2xRAugQE3xLZOnnvuuTZt2sC/xC/My0CsjFgQFK2GWIS1MpHJ9sWQjWT9+vWrqqoithYuLwOxMmJBUIQyoghrZSKT7YshWwJjzZo1ycnJ586da2xsPHHiRHp6OvEL8zIQKyMWBEUoI4qwViYy2b4YsiUw4OkSwmBm5u/v/+qrr5aUlBC/MC8DsTJiQVCEMqKoa90Al8DwSSwhMlwCw7exhMhwCQzfxhIiQ3wbFBliOp4WmfbZU+tBfAydDlbLSF0rRCsprQfxMXQ6WC0jda0QraSoR7YcBgTk5OSEhIRAVUlJSV5eXmBgYGhoaGlpKQmQ5WsgFoHvcg61jNS1QhQiky2HAQFZWVl2u72wsDAgIGDmzJnEprs2yfI1EIvAdzmHWkafyOFDm7GJIFWyPyKHgLq6OodzqGNtPz8/EiDL10AsQmtFxrv0oJLSemTLYbCHCG1ZvgZiEfgu51DLSF0rRCEyxUhGDJmtztdAnjp8l3OoZaSuFaIQmWw5DKGwWFuWr4FYBL7LOdQyUtcKUYhMthyGUFisLcvXQCwC3+UcahmpaxGEgCJDTAdFhpgOigwxHauITPtAgPgMOl2rlpG6VkGfPn2ioqJYj1EiM6odxEB0ukQtI3WtjKNHj77s5NixY9RplDiMagcxEJ0uUctIXStjypQpK1asyMvLmzp1KnWCOAoKCiIiIoKCgmbMmHH//n3iV6Rm0GNp0cbA1iJPF53OUMtIXSsEVBIYGEj+Wx/0xIomOTn5qhMwli1bRvyK1AxicEWUlwXR6RK1jD6Rw4c2s3Xr1pSUFGKDerZt20ZsEAd9cVlRUUFfXLryQpMtosgsiE6XKOTi0KsVMnLkyE2bNhG7uLj49ddfJzaIQ5iC4UpqBltEkVkQnS5Ry0hdq+X69evt2rUjcyYCFMHpcIqD7v8AQ5fuSAZqo388V1NTQ7WFm5VYEI+KLD8//5133mE9EydO/PTTTx1OkaWlpZE5WWpqKp17yVIz4uPjs7OzGxoaLl++nJ6eTkWGm5VYEI+KLDo6+siRI6wHijExMQ6nyODpMjw8HB4Lpk+fzi4mJUzNgFEtLi7O39+/f//+RUVFVGS4WYkF0ekMtYzUtQhCQJEhpoMiQ0wHRYaYjlVEhlN1H0ana9UyUtcKqampefvtt4ODgzt16pSUlHTgwAHiR5H5MDpdq5aRulZISkrK+++/f/36dbvd/vPPPycmJhI/isyH0elatYzUtUICAgLu3LnDe50iKyoqGjBggL+/f1xcXHl5OfErsjCEWRuIBfG0yIYOHTpr1qyLFy9yfhBNRkZGVVVVQ0NDdnY23cdEkYUhzNpALEhrRSaDD20GbpTTpk176aWXOnfunJmZee3aNeIH0cB0jdiNjY0dO3YktuzdpU2StYFYkNaKjHe5zI0bN+bOnZuQkECK3JyMFhVZGEI/YkGemsiA27dv0z3kZCJTjGTCrA3EgnhaZPA4CQ+V9fX1tbW1H374IUzRiF8mMlkWhk2StYFYEE+L7MCBA0lJSS+88EK3bt3Gjh37119/Eb9MZLIsDPJ0qc3aQCyIp0VmFJwoESuj01VqGalrTQVF5kXodJVaRupaU0GReRE6XaWWkboWQQheIDI6aOHo5aXodJtaRupaGb///vvIkSM7derUpUuXhISEffv28RFP4rbIWhqPmIRON6hlpK4VUlFR0b1794KCgmvXrtXX1//yyy+pqal80JO4LTLEIuh0m1pG6loh48ePX716Ne91cuHChbFjxwYGBnbu3HnMmDG1tbXErxWZbAsSCNiwYUOvXr3IX1/qxh88eHDgwIEdO3bs37//5s2biRMxHE+LrFu3brLl0KOjow8fPnz37t1bt27NnDlz0qRJxK8VmWwLEggYPXo0+9JdHd+zZ8/t27ffu3fv/PnzEyZMIE7EcForMhl8aDNt27Zl/9ee8GTIv9jtdhiQiK0VmWwLEgiorq4mNikSQxYfGhq6du3aK1eukCJiEoIOZlHIxT20IxmVwsmTJxMTE+GORpQHcuQCqCHbggQCHj9+TGxX4k+dOpWRkREUFBQVFbV37156IGIsnhYZzLo+++wz1kOlEBkZuXHjxrq6ukePHsF9Tastasi2IKEBXFEWTwBd7t69Ozg4mK9ADMLTIisrK4Ony6+//hpuW42NjTD1plKAbt65c2dTU1NlZSVoUastasi2IJGJTBYPE7jTp0/D7RtEBvOz/x2JGIqnRQYcP34cbosBAQFwn4L5+KFDh4h/z549MOS0b98+LCwMpkpabVFDtgWJTGSy+B07dsTExMDNFJ4x4Znjf0cihvIURIY8a6DIENNBkSGmgyJDTMcSItNO7RFfQqdT3ROZx/Is1EBrgwcP5jxsEfEMOhfdDZFZJ8/C5vyLpi1btrAeph7xEDoX3Q2ReSzP4sUXX6QtPHjwAIp///03KdLg8vLyqKgoulIGbV9xJvC5ISEhwcHBJSUleXl5EBMaGlpaWkoCZCeGKHBfZM734P/C+bVvJynG5llAC8uXLyf+/fv30y0BKKS1yZMnkwW2qcehPJOsrCy73V5YWBgQEABVxB40aBAJkJ0YokBfZApIAHeIx/IsoKfDwsJgDAN72rRp33//PfFTSGvkcLhxUw8HdyZ1dXUO52pCrO3n50cCZCeGKBBcdBathiis1Fi0IxntWsPzLMaNG/fdd9+Bp1+/fjAsUT+Btpabmztv3jzWo3smMlt2YogC90XmkNR6Ms/i119/jY2NPXr0KLcHBYEGg/5gZgZDoOtnIrNlJ4YoMF5knsyzAIYMGZKQkEDfsrOwwcXFxZmZma6ficyWnRiigO8zDqGMKLJaj+VZALt27YIZFcRzfseTwXBLhTGPenTPRGbLTgxRwPcZh0xGBHWtZ1i/fv38+fN5L2IlvFtkt27d6tu379WrV/kKxEp4scjgFgYPdwUFBXwFYjG8WGSIt+AFIhPOyhEvQqfb1DJS18qwTo4GZyAmoXN91TJS1wqxTo4GxaRmEYrO9VXLSF0rxFI5GuRfCvErGlcnaCAyPC0y7ZtNiiIzgjNkqRC2ludosAZB0bg6QQOR0VqRyeBDm7FajgZrEBSNqxM0EBmCDmZRyMU9tCMZ7WPdzAhqyFIhbG7laHAiUzROY2Q2IkTnAhkuMgvmaJDFzCiuNC6zESE6F8hwkVkwRwMGV7qDjsO1xmU2IkTnAhkuMof1cjRgpt+lS5cWNS6zESE6F8gMkXkSzNGwAr4sMszRsAg+KzIb5mhYBp8VGWIdrCUynET7JDqd6rbI+vTpExUVxXv1kIlM5ke8Ap3Oc09kR48efdnJsWPH+DolKCafRKdT3RPZlClTVqxYkZeXN3XqVOq0PbldyMOHDxcvXhwWFhYcHEyn5xBTVFQ0YMAAf3//uLi48vJy6i8rK4uMjKRvjcCIiIg4c+aMLGkCdxuxDu6LzPke/F84f1NTU2BgINk1PCgoiG7cbHtyu5Dc3Nxhw4ZdunSppqZm+vTpNCYjI6Oqqgq0kp2dHR8fT/3w7yuvvALSIZ4DBw6Q9AdZ0gTuNmId9EWmgARwh2zdujUlJYXYycnJ27ZtI7btye1CYNJGByoKxIDmiN3Y2AjjEPXDv+vWrRs/fjzxvPHGG2T8kyVN4G4j1kFfZLyrGVZqLCNHjty0aROxi4uLaSKX7ckUiQ4dOtCcHwo3J6NFYtTX13fq1OlvJ2CQNVRkSRO424h1cF9kDlEtjCXt2rWzMUARnA6NgKDvhSOZsEgNuPGtWrVq5cqVmZmZxCNLmiDgbiNWwGCRwQyJy6uByThZHowT0PLly2FOVllZyc3J2BityGAqBqrq27cvnZzJkiZwtxHrYLDIoqOjjxw5wnqgGBMT49AI6MGDBwsWLICHTVDA+vXriVNXZDAy9XZC77yypAncbcQ6GCwyBNGCIkNMB0WGmA6KDDEdbxIZ91iAeAs63aaWkbpWgXVyNBITE3/44Qda3LVrV1JSElOPGIBO96hlpK6VYakcjePHj8fGxtIi2OBh6hED0Ok2tYzUtTKskKPBkp6evn//fjD27ds3evRo4pQdqFiwgz1/hMXTIrNIjgYLiDUhIQGMoUOHUuHKDlQs2MGeP8LSWpHJ4EObsUiOBsebb765dOlSEBP1uHIgt2AHe/4IS6tE5gYWydHggCETGqmsrKQe2YGKBTvY80dYPCoyq+VosHCNyw7UXbAD0aJzaYwVmXVyNLRwjcsO1F2wA9Gic2mMFZl1cjS0cI3LDtRdsAPRonNpjBUZ8myCIkNMB0WGmA6KDDEdFBliOgaLzCaCD3IB945CrIlOX7ZUZBRUCULRkYJRImtqapo9e3ZwcHCPHj3AYN+LFxQUREREBAUFzZgx4/79+9RPDGE6Bq5z4V24LzLne/B/4SuccCIDoSQnJ5Pki+HDhy9ZsoSGgf+qEzCWLVtG/cQQpmPgOhfehb7IFJAA/hgnnMhgrDp79iyxy8vLIyMjiQ1h1F9RUcH6iSFMx8B1LrwLHZEpYKWmhRMZm1UBBhSJDWEyPzGE6Ri4zoV34b7IHPJhzKERmWIkoxs1QIB2JBOmYxBwnQtvwUMiW7hwIZ2TJSYmLlq0iIalpaWROVlqaio7VyOGMB0D17nwLjwkMhDErFmzejgBg90oDp4Zw8PDAwMDQUPsUycxhOkYuM6Fd2GWyFyE0yLik7Sqj1FkiCu0qo9RZIgrtKqPWy8y5FkARYaYjkdFZhPBB7mA60dB5ODBgzkPW0Q8QKuueEtFRvFYT9uc/w+3ZcsW1sPUI56gVVfcKJEZm6PBApHl5eVRUVHaYxWrWuTk5ISEhECbJSUleXl5EBMaGlpaWkoCZMtkIDIsITJjczRYSOTkyZPJX3dSj0O5qkVWVpbdbi8sLAwICIAqYpPFNRzyZTIQGa0VmQw+9Ek4kSnebLqRo8FCIsliFmThAu6jCdyqFnV1dQ7n+Mrafn5+JMCVZTIQFsEV9wBcTxubo8HCjnnz5s1jPYpVLYghs2XLZCAyLCEyxUjmdo4GgUbCbRGCq6urqceVVS2EtmyZDESGJURmbI4GC/tBxcXFmZmZ1OPKqhZCW7ZMBiLDEiIzNkeDhf2gx48fx8bGUo8rq1oIbdkyGYiMpyMyF+G0iHgplu5FFJlvYOleRJH5BtiLiOmgyBDTQZEhpoMiQ0zn/wDV3YHp/MtSngAAAABJRU5ErkJggg==" alt="taw web diagram cmsmap">
+</div>
+<div class="title">Figure 2. NetlifyCMS Structure (Collections)</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_content_editing">Content Editing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Hints are included with notable fields in the NetlifyCMS editor.
 Fields for editable content types are also listed below.</p>
-<section class="doc-section level-2"><h3 id="_blog">Blog</h3><section class="ulist"><h6 class="block-title">Fields</h6>
-<ul><li>Title</li><li>Published</li><li>Publish Date. Required.</li><li>Body</li><li>Description - SEO: Will be used in the site meta-description tag.</li><li>Topics - Be sure to match the topic name used in Topics (lowercase, dashes, etc.)</li></ul></section>
-<aside class="admonition-block tip" role="doc-tip"><h6 class="block-title label-only"><span class="title-label">Tip: </span></h6><p>You can upload images using the Rich Text editor.
-Switch back to Markdown to apply styling.</p></aside>
+</div>
+<div class="sect2">
+<h3 id="_blog">Blog</h3>
+<div class="ulist">
+<div class="title">Fields</div>
+<ul>
+<li>
+<p>Title</p>
+</li>
+<li>
+<p>Published</p>
+</li>
+<li>
+<p>Publish Date. Required.</p>
+</li>
+<li>
+<p>Body - Use the Rich Text editor to add images to your post.</p>
+</li>
+<li>
+<p>Post Thumbnail - Used in the blog post teaser/preview, if available.</p>
+</li>
+<li>
+<p>Description - SEO: Will be used in the site meta-description tag.</p>
+</li>
+<li>
+<p>Topics - Be sure to match the topic name used in Topics (lowercase, dashes, etc.)</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+You can upload images using the Rich Text editor in NetlifyCMS.
+Switch back to Markdown to apply styling.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>To bulk upload images to a folder:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Navigate to the folder on GitHub</p>
+</li>
+<li>
+<p>Click the <em>Upload files</em> button on the right, above the file list (you must be logged in)</p>
+</li>
+<li>
+<p>Drag and drop multiple files</p>
+</li>
+<li>
+<p>Click <em>Commit changes</em></p>
+</li>
+</ol>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
 <p>Bootstrap classes can be used for formatting as shown below. Bootstrap classnames appear between brackets <code>{ &#8230;&#8203; }</code> and immediately follow the image tag.</p>
-<figure class="listing-block"><figcaption>Image styling using Bootstrap classes:</figcaption>
-<pre class="highlight"><code class="language-markdown" data-lang="markdown">![Molly Thompson](/uploads/molly-2020.png){: .w-50 <b class="conum">1</b>
- .ml-3 <b class="conum">2</b>
- .img-thumbnail <b class="conum">3</b>
- .float-right <b class="conum">4</b>
-}</code></pre><ol class="callout-list arabic"><li><a href="https://getbootstrap.com/docs/4.4/utilities/sizing/">Scale the image</a> to 50%</li><li><a href="https://getbootstrap.com/docs/4.4/utilities/spacing/">Add left margin</a> of 3 units</li><li><a href="https://getbootstrap.com/docs/4.4/content/images/">Alter image appearance</a>, and</li><li><a href="https://getbootstrap.com/docs/4.4/utilities/float/">Align the image</a> to the right of the content area.</li></ol></figure>
-</section>
-<section class="doc-section level-2"><h3 id="_galleries">Galleries</h3><section class="ulist"><h6 class="block-title">Fields</h6>
-<ul><li>Title - Appears below image. Required.</li><li>Description - SEO + Social Sharing.</li><li>Image - Images uploaded to <code>/uploads/[galleryname]</code>. Required.</li><li>Published</li><li>Publish Date - Affects sort order in gallery. Required.</li><li>Tags - Options: "cover", "featured". Show image on home page (featured) or as the gallery cover image.</li><li>Body - Optional content will appear below the image.</li></ul></section>
-<aside class="admonition-block note" role="note"><h6 class="block-title label-only"><span class="title-label">Note: </span></h6><p>Gallery images are stored separate from the default Media location.</p></aside></section>
-<section class="doc-section level-2"><h3 id="_archives_and_topics">Archives and Topics</h3><p>Archive and Topic entries must exist to provide lists of posts by year and by topic.</p>
-<section class="ulist"><h6 class="block-title">Fields for Archives</h6>
-<ul><li>Year - in YYYY format</li><li>Published</li><li>Body</li></ul></section>
-<section class="ulist"><h6 class="block-title">Fields for Topics</h6>
-<ul><li>Topic - Lowercase, use dash for space between words.</li><li>Published</li><li>Body</li></ul></section></section>
-<section class="doc-section level-2"><h3 id="_pages">Pages</h3><section class="ulist"><h6 class="block-title">Fields</h6>
-<ul><li>Order - Controls the position within the main navigation</li><li>Body</li><li>Description - for SEO purposes</li><li>Published - <em>Only available for Shop</em></li></ul></section>
-<aside class="admonition-block note" role="note"><h6 class="block-title label-only"><span class="title-label">Note: </span></h6><p>No two pages are alike&#8201;&#8211;&#8201;adding new pages from NetlifyCMS is disabled.</p></aside></section>
-<section class="doc-section level-2"><h3 id="_everything_else">Everything Else</h3><p>While most content can be edited via NetlifyCMS there are a few bits tucked away in the site configuration file,
+</div>
+<div class="listingblock">
+<div class="title">Image styling using Bootstrap classes:</div>
+<div class="content">
+<pre class="highlight"><code class="language-markdown" data-lang="markdown">![Molly Thompson](/uploads/molly-2020.png){: .w-50 <i class="conum" data-value="1"></i><b>(1)</b>
+ .ml-3 <i class="conum" data-value="2"></i><b>(2)</b>
+ .img-thumbnail <i class="conum" data-value="3"></i><b>(3)</b>
+ .float-right <i class="conum" data-value="4"></i><b>(4)</b>
+}</code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td><a href="https://getbootstrap.com/docs/4.4/utilities/sizing/">Scale the image</a> to 50%</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td><a href="https://getbootstrap.com/docs/4.4/utilities/spacing/">Add left margin</a> of 3 units</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="3"></i><b>3</b></td>
+<td><a href="https://getbootstrap.com/docs/4.4/content/images/">Alter image appearance</a>, and</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="4"></i><b>4</b></td>
+<td><a href="https://getbootstrap.com/docs/4.4/utilities/float/">Align the image</a> to the right of the content area.</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_gallery_items">Gallery Items</h3>
+<div class="ulist">
+<div class="title">Fields</div>
+<ul>
+<li>
+<p>Title - Appears below image. Required.</p>
+</li>
+<li>
+<p>Description - SEO + Social Sharing.</p>
+</li>
+<li>
+<p>Image - Images uploaded to <code>/uploads/[galleryname]/</code>. Required.</p>
+</li>
+<li>
+<p>Image Thumbnail - Images uploaded to <code>/uploads/[galleryname]/thumbnail/</code>. Required if not uploading them manually via GitHub. NOTE: Manually uploaded images will not appear in the CMS.</p>
+</li>
+<li>
+<p>Published</p>
+</li>
+<li>
+<p>Publish Date - Affects sort order in gallery. Required.</p>
+</li>
+<li>
+<p>Tags - Options: "cover", "featured". Show image on home page (featured) or as the gallery cover image.</p>
+</li>
+<li>
+<p>Body - Optional content will appear below the image.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Gallery images are stored separate from the default Media location.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_archives_and_topics">Archives and Topics</h3>
+<div class="paragraph">
+<p>Archive and Topic entries must exist to provide lists of posts by year and by topic.</p>
+</div>
+<div class="ulist">
+<div class="title">Fields for Archives</div>
+<ul>
+<li>
+<p>Year - in YYYY format</p>
+</li>
+<li>
+<p>Published</p>
+</li>
+<li>
+<p>Body</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Fields for Topics</div>
+<ul>
+<li>
+<p>Topic - Lowercase, use dash for space between words.</p>
+</li>
+<li>
+<p>Published</p>
+</li>
+<li>
+<p>Body</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pages">Pages</h3>
+<div class="ulist">
+<div class="title">Fields</div>
+<ul>
+<li>
+<p>Order - Controls the position within the main navigation</p>
+</li>
+<li>
+<p>Body</p>
+</li>
+<li>
+<p>Description - for SEO purposes</p>
+</li>
+<li>
+<p>Published - <em>Only available for Shop</em></p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+No two pages are alike&#8201;&#8212;&#8201;adding new pages from NetlifyCMS is disabled.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_everything_else">Everything Else</h3>
+<div class="paragraph">
+<p>While most content can be edited via NetlifyCMS there are a few bits tucked away in the site configuration file,
 namely the <strong>description</strong>,
 which you can override by editing the <code>index.md</code> file at <em>Pages &gt; Home</em>.</p>
-<p>Other defaults, such as site <strong>title</strong> and <strong>author</strong> are also stored in <a href="https://github.com/lyonritchie/thompsonartwork/blob/master/_config.yml"><code>_config.yml</code></a>.</p></section></section></div><footer><div id="footer-text">Version 0.1<br>Last updated 2020-05-01 12:19:11 -0400</div></footer></body></html>
+</div>
+<div class="paragraph">
+<p>Other defaults, such as site <strong>title</strong> and <strong>author</strong> are also stored in <a href="https://github.com/lyonritchie/thompsonartwork/blob/master/_config.yml"><code>_config.yml</code></a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 0.2<br>
+Last updated 2020-05-01 16:04:42 -0400
+</div>
+</div>
+</body>
+</html>

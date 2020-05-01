@@ -34,12 +34,13 @@ collections:
         format: 'YYYY-MM-DD HH:mm'
         default: ''
         required: true
-      - label: 'Image Thumbnail'
+      - label: 'Post Thumbnail'
         name: 'image_tn'
         widget: 'image'
         media_folder: '/uploads/thumbnail/'
         config:
           - multiple: false
+        hint: 'Used in the blog post teaser/preview, if available.'
         required: false
       - label: 'Body'
         name: 'body'
@@ -131,6 +132,8 @@ collections:
         media_folder: '/uploads/digital-art/thumbnail/'
         config:
           - multiple: false
+        required: false
+        hint: 'Required if not uploading them manually via GitHub.'
       - label: 'Published'
         name: 'published'
         widget: 'boolean'
@@ -188,6 +191,8 @@ collections:
         media_folder: '/uploads/drawings/thumbnail/'
         config:
           - multiple: false
+        required: false
+        hint: 'Required if not uploading them manually via GitHub.'
       - label: 'Published'
         name: 'published'
         widget: 'boolean'
@@ -245,6 +250,8 @@ collections:
         media_folder: '/uploads/kid-stuff/thumbnail/'
         config:
           - multiple: false
+        required: false
+        hint: 'Required if not uploading them manually via GitHub.'
       - label: 'Published'
         name: 'published'
         widget: 'boolean'
@@ -302,6 +309,8 @@ collections:
         media_folder: '/uploads/studies/thumbnail/'
         config:
           - multiple: false
+        required: false
+        hint: 'Required if not uploading them manually via GitHub.'
       - label: 'Published'
         name: 'published'
         widget: 'boolean'
