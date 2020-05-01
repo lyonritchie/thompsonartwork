@@ -32,6 +32,7 @@ thumbs: $(TNS) cleanup ##@website Create thumbnails for gallery images (all)
 galleries: $(MD_FILES)
 	# $(MD_FILES)
 
+# http://www.fmwconcepts.com/imagemagick/smarttrim/index.php
 METRIC := canny
 FUZZVAL := 10
 TNSIZE := 250
