@@ -12,13 +12,10 @@ layout: default
 {%- endcomment -%}
 
   {% if page.name == 'galleries.md' %}
-  <section style="width: 100%" class="py-3 
+  <section class="py-3 
     d-flex 
-    flex-wrap 
     justify-content-center
     ">
-    <!-- featured galleries -->
-    <!-- justify-content-sm-between -->
     {% assign alldocs = site.documents %}
     {% assign grouptag =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag | where: "name","cover" %}
     {%- for tag in grouptag -%}
