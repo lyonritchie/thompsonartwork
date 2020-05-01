@@ -2,6 +2,6 @@
 layout: post
 title: Testing date format
 published: false
-date: 2020-05-01 15:39:09
+date: 2020-05-01 15:44
 ---
 test
