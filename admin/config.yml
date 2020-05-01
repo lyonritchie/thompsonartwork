@@ -279,13 +279,13 @@ collections:
       - label: 'Image'
         name: 'image'
         widget: 'image'
-        media_folder: '/uploads/studies'
+        media_folder: '/uploads/studies/'
         config:
           - multiple: false
       - label: 'Image Thumbnail'
         name: 'image_tn'
         widget: 'image'
-        media_folder: '/uploads/studies/thumbnail'
+        media_folder: '/uploads/studies/thumbnail/'
         config:
           - multiple: false
       - label: 'Published'
