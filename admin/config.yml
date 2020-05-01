@@ -32,6 +32,13 @@ collections:
         format: 'YYYY-MM-DD HH:MM:SS ZZ'
         default: ''
         required: true
+      - label: 'Image Thumbnail'
+        name: 'image_tn'
+        widget: 'image'
+        media_folder: '/uploads/thumbnail'
+        config:
+          - multiple: false
+        required: false
       - label: 'Body'
         name: 'body'
         widget: 'markdown'
@@ -165,6 +172,12 @@ collections:
         media_folder: '/uploads/drawings'
         config:
           - multiple: false
+      - label: 'Image Thumbnail'
+        name: 'image_tn'
+        widget: 'image'
+        media_folder: '/uploads/drawings/thumbnail'
+        config:
+          - multiple: false
       - label: 'Published'
         name: 'published'
         widget: 'boolean'
@@ -214,6 +227,12 @@ collections:
         media_folder: '/uploads/kid-stuff'
         config:
           - multiple: false
+      - label: 'Image Thumbnail'
+        name: 'image_tn'
+        widget: 'image'
+        media_folder: '/uploads/kid-stuff/thumbnail'
+        config:
+          - multiple: false
       - label: 'Published'
         name: 'published'
         widget: 'boolean'
@@ -261,6 +280,12 @@ collections:
         name: 'image'
         widget: 'image'
         media_folder: '/uploads/studies'
+        config:
+          - multiple: false
+      - label: 'Image Thumbnail'
+        name: 'image_tn'
+        widget: 'image'
+        media_folder: '/uploads/studies/thumbnail'
         config:
           - multiple: false
       - label: 'Published'
