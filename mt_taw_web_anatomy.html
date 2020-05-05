@@ -471,8 +471,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>ThompsonArtwork.com is a static website&#8201;&#8212;&#8201;it does not use a database.
 Instead data is stored in flat text files throughout the git repository.
-GitHub Pages automatically recompiles this repo to html after each edit (commit) or push from local working copy.
-To streamline maintenance and publishing NetlifyCMS is connected as a front-end available at <a href="https://thompsonartwork.com/admin" class="bare">https://thompsonartwork.com/admin</a>.</p>
+GitHub Pages automatically re-compiles this repo to html after each edit (commit) or push from a local working copy.
+To streamline maintenance and publishing, NetlifyCMS is connected as a front-end available at <a href="https://thompsonartwork.com/admin" class="bare">https://thompsonartwork.com/admin</a>.</p>
 </div>
 </div>
 </div>
@@ -488,7 +488,8 @@ To streamline maintenance and publishing NetlifyCMS is connected as a front-end 
 <p>Write privileges to the <a href="https://github.com/lyonritchie/thompsonartwork">site repository</a> provided by invite from Lyon Ritchie</p>
 </li>
 <li>
-<p>Images named <code>word-word-another.jpg</code>, e.g. using the dash as a separator. Include corresponding thumbnails:</p>
+<p>Images named <code>word-word-another.jpg</code>, e.g. using the dash as a separator.
+Include corresponding thumbnails:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -517,7 +518,7 @@ To streamline maintenance and publishing NetlifyCMS is connected as a front-end 
 <div class="title">Figure 1. Logical Structure</div>
 </div>
 <div class="paragraph">
-<p>NetlifyCMS uses collections to group content that shares the same data structure.</p>
+<p>NetlifyCMS uses collections to group content that shares the same data with a slightly different organization.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -552,10 +553,11 @@ Fields for editable content types are also listed below.</p>
 <p>Body - Use the Rich Text editor to add images to your post.</p>
 </li>
 <li>
-<p>Post Thumbnail - Used in the blog post teaser/preview, if available.</p>
+<p>Post Thumbnail - Used in the blog post teaser/preview.</p>
 </li>
 <li>
-<p>Description - SEO: Will be used in the site meta-description tag.</p>
+<p>Description - Search engine optimization (SEO):
+Will be used in the site meta-description tag.</p>
 </li>
 <li>
 <p>Topics - Be sure to match the topic name used in Topics (lowercase, dashes, etc.)</p>
@@ -606,7 +608,8 @@ Switch back to Markdown to apply styling.
 </table>
 </div>
 <div class="paragraph">
-<p>Bootstrap classes can be used for formatting as shown below. Bootstrap classnames appear between brackets <code>{ &#8230;&#8203; }</code> and immediately follow the image tag.</p>
+<p>Bootstrap classes can be used for formatting as shown below.
+Bootstrap classnames appear between brackets <code>{ &#8230;&#8203; }</code> and immediately follow the image tag.</p>
 </div>
 <div class="listingblock">
 <div class="title">Image styling using Bootstrap classes:</div>
@@ -645,25 +648,31 @@ Switch back to Markdown to apply styling.
 <div class="title">Fields</div>
 <ul>
 <li>
-<p>Title - Appears below image. Required.</p>
+<p>Title - Appears below image.
+Required.</p>
 </li>
 <li>
-<p>Description - SEO + Social Sharing.</p>
+<p>Description - Used for search SEO + Social Sharing (via <a href="http://ogp.me/">Open Graph</a>).</p>
 </li>
 <li>
-<p>Image - Images uploaded to <code>/uploads/[galleryname]/</code>. Required.</p>
+<p>Image - Images uploaded to <code>/uploads/[galleryname]/</code>.
+Required.</p>
 </li>
 <li>
-<p>Image Thumbnail - Images uploaded to <code>/uploads/[galleryname]/thumbnail/</code>. Required if not uploading them manually via GitHub. NOTE: Manually uploaded images will not appear in the CMS.</p>
+<p>Image Thumbnail - Images uploaded to <code>/uploads/[galleryname]/thumbnail/</code>.
+Required if not uploading them manually via GitHub.
+NOTE: Manually uploaded images will not appear in the CMS.</p>
 </li>
 <li>
 <p>Published</p>
 </li>
 <li>
-<p>Publish Date - Affects sort order in gallery. Required.</p>
+<p>Publish Date - Affects sort order in gallery.
+Required.</p>
 </li>
 <li>
-<p>Tags - Options: "cover", "featured". Show image on home page (featured) or as the gallery cover image.</p>
+<p>Tags - Options: "cover", "featured".
+Show image on home page (featured) or as the gallery cover image.</p>
 </li>
 <li>
 <p>Body - Optional content will appear below the image.</p>
@@ -686,7 +695,7 @@ Gallery images are stored separate from the default Media location.
 <div class="sect2">
 <h3 id="_archives_and_topics">Archives and Topics</h3>
 <div class="paragraph">
-<p>Archive and Topic entries must exist to provide lists of posts by year and by topic.</p>
+<p>Archive and Topic entries must exist to provide lists of blog posts organized by year or by topic.</p>
 </div>
 <div class="ulist">
 <div class="title">Fields for Archives</div>
@@ -766,7 +775,7 @@ which you can override by editing the <code>index.md</code> file at <em>Pages &g
 <div id="footer">
 <div id="footer-text">
 Version 0.2<br>
-Last updated 2020-05-01 16:04:42 -0400
+Last updated 2020-05-05 09:53:33 -0400
 </div>
 </div>
 </body>
