@@ -2,10 +2,10 @@
 layout: post
 title: Test Thumb
 image: /uploads/first-blog-post.jpg
+published: false
+date: 2020-05-01T18:04:00.000Z
 image_tn: /uploads/thumbnail/first-blog-post_tn.jpg
-published: true
-date: 2020-05-01 18:04:00
-category: 
+category:
   - adventures
 ---
 
