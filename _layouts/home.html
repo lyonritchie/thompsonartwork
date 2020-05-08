@@ -60,7 +60,7 @@ layout: default
               {{ post.excerpt | truncatewords: 9, '...' }}
             {%- endif -%}
           </div>
-          <a href="{{ post.url | relative_url }}" class="card-link">Read more...</a>
+          <a href="{{ post.url | relative_url }}" class="stretched-link card-link">Read more...</a>
         </div>
         <div class="card-footer text-muted">
           {%- assign date_format = "%b %-d, %Y" -%}

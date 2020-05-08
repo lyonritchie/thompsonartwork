@@ -13,7 +13,7 @@ layout: default
 
   {% if page.name == 'galleries.md' %}
   <section class="py-3 
-    d-flex 
+    d-sm-flex 
     justify-content-center
     ">
     {% assign alldocs = site.documents %}
@@ -26,7 +26,7 @@ layout: default
           
           {% assign collectionname = doc.collection %}
           {% assign col = site.collections | where: 'label',collectionname | first %}
-          <div class="card text-center border-white" style="max-width: 250px">
+          <div class="card text-center border-white mx-auto" style="max-width: 250px">
             <h5 class="card-title nav-item" style="font-weight: 500;" >
               <a 
               class="stretched-link nav-link"
