@@ -12,7 +12,7 @@ tags:
 
 Launching a website for my personal art was overdue, and (I truly think) necessary to my growth as an artist. I am restricted from having more than one profile on some professional websites, and I’ve thought myself in circles over the consequences of muddying up my brand by including anything that deviates from my brand.
 
-![Molly writes a plan](/uploads/first-blog-post.jpg){: .w-50 .ml-3 .img-thumbnail .float-right}
+![Molly writes a plan](/uploads/first-blog-post.jpg){: .text-center}
 
 So here I am (you can read my [Artist Statement](/about#artist-statement) for more of my background) and my reasons for establishing a separate website are as follows:
 
