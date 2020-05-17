@@ -1,6 +1,6 @@
 ---
 layout: galleryitem
-title: Black Friday
+title: Black Friday Shopper
 image: /uploads/drawings/black-friday-shopper.jpg
 image_tn: /uploads/drawings/thumbnail/black-friday_tn.jpg
 published: true
