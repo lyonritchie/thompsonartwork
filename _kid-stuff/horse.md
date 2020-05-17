@@ -7,4 +7,5 @@ published: true
 date: 2020-05-01 12:05:09 -0400
 tags:
   - cover
+  - featured
 ---
