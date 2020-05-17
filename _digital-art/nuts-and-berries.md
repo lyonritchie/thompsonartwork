@@ -1,6 +1,6 @@
 ---
 layout: galleryitem
-title: Nuts And Berries
+title: Nuts and Berries
 description: My favorite cocktail! This went into the Pittsburgh Society of
   Illustrators drink directory, "Drawing Under the Influence." It's a creamy,
   pink drink with hazelnut and raspberry liqueur. Shaken with ice, it's
