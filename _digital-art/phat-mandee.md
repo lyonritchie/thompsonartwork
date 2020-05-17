@@ -1,6 +1,6 @@
 ---
 layout: galleryitem
-title: Phat Mandee
+title: Phat Man Dee
 description: This portrait of Phat Man Dee was created for a KA-BLAM! fundraiser
   benefitting the ToonSeum. The theme was "Pittsburgh Characters," paying
   tribute to local folks with distinctive personalities. I'm not a Pittsburgh
