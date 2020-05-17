@@ -1,6 +1,6 @@
 ---
 layout: galleryitem
-title: Curley Squirrel
+title: Curly Squirrel
 image: /uploads/drawings/curly-squirrel.jpg
 image_tn: /uploads/drawings/thumbnail/curly-squirrel.jpg
 published: true
