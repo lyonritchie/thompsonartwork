@@ -8,7 +8,7 @@ description: My favorite cocktail! This went into the Pittsburgh Society of
 image: /uploads/digital-art/nuts-and-berries.jpg
 image_tn: /uploads/digital-art/thumbnail/digital-art_tn.jpg
 published: true
-date: 2020-04-15 14:29:14.237177100 -0400
+date: 2020-04-15 14:29
 tags:
   - cover
 ---
