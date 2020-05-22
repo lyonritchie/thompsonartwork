@@ -3,10 +3,10 @@ layout: post
 title: Practice without Frets
 published: true
 date: 2020-05-22 14:35
+tags:
+  - creative-health
 ---
 <!--StartFragment-->
-
-Practicing Without Frets
 
 Would you make time for art if you knew every piece would be a masterpiece? Probably. Do you resist making art because you’re afraid you’ll end up with something lousy? I can identify with the latter, and it’s not uncommon. But focusing solely on the end result takes the joy out of what should be a rewarding pastime. Rethinking the goal of art-making can help.
 
