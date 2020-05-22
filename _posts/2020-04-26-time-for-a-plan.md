@@ -9,8 +9,7 @@ category:
 tags:
   - adventures
 ---
-
-Launching a website for my personal art was overdue, and (I truly think) necessary to my growth as an artist. I am restricted from having more than one profile on some professional websites, and I’ve thought myself in circles over the consequences of muddying up my brand by including anything that deviates from my brand.
+Launching a website for my personal art was overdue, and (I truly think) necessary to my growth as an artist. I am restricted from having more than one profile on some professional websites, and I’ve thought myself in circles over the consequences of muddying up my brand by including anything that deviates from it.
 
 ![Molly writes a plan](/uploads/first-blog-post.jpg){: .mx-auto .d-block}
 
