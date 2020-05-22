@@ -6,8 +6,6 @@ date: 2020-05-22 14:35
 tags:
   - creative-health
 ---
-<!--StartFragment-->
-
 Would you make time for art if you knew every piece would be a masterpiece? Probably. Do you resist making art because you’re afraid you’ll end up with something lousy? I can identify with the latter, and it’s not uncommon. But focusing solely on the end result takes the joy out of what should be a rewarding pastime. Rethinking the goal of art-making can help.
 
 I like to compare making art to playing an instrument. Did you ever see a kid bang on a piano just because they wanted to see what it sounded like? Maybe you have a keyboard you noodle with while dinner’s in the oven, or maybe you bought a guitar specifically to learn one song you love. Odds are you didn’t expect to master the instrument in a day, and you might not intend to ever master it. You enjoy making music for the fun of it, whether anyone’s listening or not. Whether you or anyone else thinks you're “good” or not.
@@ -31,5 +29,3 @@ Only if you let it. So don’t let it! Throw it away, erase it, tear it up, burn
 Allow yourself to reap all the benefits of practice and forget about assigning yourself a grade. You didn’t make this thing for anyone but yourself, just like you weren’t studying for an exam, instructing a live yoga class or playing music for a wedding. It didn’t have to be “good”, because it wasn’t a performance. It was practice. So don’t fret! It was still goodforyou.
 
 Fiddles don’t have frets by the way, so I can’t fret when I practice music. That’s a bit of a joke, but I really do try my best to apply this whole metaphor to artwork. It reminds me that practice is just that. It is time well spent no matter what I think of the final product.
-
-<!--EndFragment-->
