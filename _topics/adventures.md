@@ -1,4 +1,5 @@
 ---
 topic: adventures
-permalink: "/topics/adventures"
+permalink: /topics/adventures
+published: true
 ---
