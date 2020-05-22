@@ -16,7 +16,7 @@ In contrast, I got my “paperweight” on a whim after I saw the Buckeye State 
 
 Drawing well, like mastering an instrument, often takes a lot of regular practice and a critical approach to improvement. But doodling (or playing, or painting, or sculpting, etc) for the pure joy of it can be done any time by anyone, no matter how much experience or skill they have or lack.
 
-So why don’t more people make art to relax or express themselves? Why do so many people tell me they’re not artistic or seem discouraged about the art they do make?
+So why don’t more people make art to relax or express themselves? Why do so many people tell me they’re not artistic or seem discouraged about the art they *do* make?
 
 I think it’s due to the nature of art vs other hobbies. What do you get when you read a book, practice yoga or play an instrument for an hour? There may not be much evidence of your time spent, but you feel a calmness. Like meditating, you escape to the zone for a while, and when you emerge to face the rest of your day you feel refreshed. Maybe it was a little more difficult this time, because you pushed yourself harder or you hadn’t practiced in a while, but you’re still glad you did it. The words passed through your mind as you read them, you exhaled all your inhales, and the notes you played resonated for mere moments before they disappeared; I can picture them floating out the window, like they never existed.
 
