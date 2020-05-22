@@ -351,17 +351,19 @@ a.nav-link.active {
   }
 }
 
-.galleryitem .carousel {
-  margin-left: 50px;
-  margin-right: 50px;
-}
+@include media-breakpoint-up(md) {
+  .galleryitem.carousel {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 
-.carousel-control-prev {
-  margin-left: -25px;
-}
+  .carousel-control-prev {
+    margin-left: -100px;
+  }
 
-.carousel-control-next {
-  margin-left: 25px;
+  .carousel-control-next {
+    margin-right: -100px;
+  }
 }
 
 .carousel-control-next-icon {
