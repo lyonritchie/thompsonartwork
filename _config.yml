@@ -67,6 +67,7 @@ collections:
   topics:
     title: Topics
     output: true
+    permalink: /topics/:path/
   drawings:
     title: Drawings
     weight: 1
