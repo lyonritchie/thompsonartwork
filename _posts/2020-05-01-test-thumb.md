@@ -7,6 +7,8 @@ date: 2020-05-01T18:04:00.000Z
 image_tn: /uploads/thumbnail/first-blog-post_tn.jpg
 category:
   - adventures
+  - test
+  - creative-health
 ---
 
 Occaecat est aliqua sint incididunt esse voluptate. Aliquip amet dolore amet pariatur. Ea veniam ad cupidatat excepteur ex amet tempor minim pariatur reprehenderit.

@@ -51,7 +51,7 @@ collections:
         hint: 'SEO: Will be used in the site meta-description tag.'
         required: false
       - label: 'Topics'
-        name: 'tags'
+        name: 'category'
         widget: 'list'
         hint: 'Be sure to match the topic name used in Topics.'
         required: false
