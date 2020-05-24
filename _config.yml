@@ -73,14 +73,14 @@ collections:
     weight: 1
     output: true
     permalink: /galleries/:collection/:path/
-  studies:
-    title: Studies
-    weight: 3
-    output: true
-    permalink: /galleries/:collection/:path/
   digital-art:
     title: Digital Art
     weight: 2
+    output: true
+    permalink: /galleries/:collection/:path/
+  studies:
+    title: Studies
+    weight: 3
     output: true
     permalink: /galleries/:collection/:path/
   kid-stuff:
