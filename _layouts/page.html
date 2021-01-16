@@ -11,13 +11,27 @@ layout: default
   </section>
 {%- endcomment -%}
 
+{% assign galleries = site.collections | sort:"weight" %}
+{% assign galleryitems = page.galleries %}
+
+<!-- {{ galleries | inspect }}
+
+{{ galleryitems | jsonify }} -->
+
+{% for item in galleryitems %}
+  {% if item.page.tags contains 'cover' %}
+  Win!
+  {% endif %}
+{%- endfor -%}
+
   {% if page.name == 'galleries.md' %}
   <section class="py-3 
     d-sm-flex 
     justify-content-center
     ">
-    {% assign alldocs = site.documents %}
+    {% assign alldocs = site.documents | sort:"weight"  %}
     {% assign grouptag =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag | where: "name","cover" %}
+    
     {%- for tag in grouptag -%}
         
         {%- for doc in alldocs -%}
