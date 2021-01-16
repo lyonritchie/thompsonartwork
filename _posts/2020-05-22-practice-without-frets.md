@@ -3,12 +3,15 @@ layout: post
 title: Practice without Frets
 published: true
 date: 2020-05-22 14:35
+image_tn: /uploads/thumbnail/fiddle_tn.jpg
 category:
   - creative-health
 ---
 Would you make time for art if you knew every piece would be a masterpiece? Probably. Do you resist making art because you’re afraid you’ll end up with something lousy? I can identify with the latter, and it’s not uncommon. But focusing solely on the end result takes the joy out of what should be a rewarding pastime. Rethinking the goal of art-making can help.
 
 I like to compare making art to playing an instrument. Did you ever see a kid bang on a piano just because they wanted to see what it sounded like? Maybe you have a keyboard you noodle with while dinner’s in the oven, or maybe you bought a guitar specifically to learn one song you love. Odds are you didn’t expect to master the instrument in a day, and you might not intend to ever master it. You enjoy making music for the fun of it, whether anyone’s listening or not. Whether you or anyone else thinks you're good or not.
+
+![](/uploads/fiddle.jpg)
 
 In my house, I’ve got a fiddle I play almost daily and a chromatic harmonica that collects dust. The fiddle I’ve worked at for almost 30 years, feeling from the start that it would be a lifetime passion. I took it seriously and had lessons as a kid and again as an adult. I practice even when I don’t really feel like it, because it’s important to me, and I’m always glad I put in the time. I know that next time I pick it up, I won’t have stiff hands or forget that new tune I’ve been working on. I know that if I stay sharp I’ll perform better when it really matters - when I have an audience and I’m being paid to play well.
 
